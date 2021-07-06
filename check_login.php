@@ -27,24 +27,26 @@ $_SESSION["id"] = $ID;
 $_SESSION["PASS"] = $password;
 $_SESSION["LEVEL"] =$user_level;
 
-echo "<h2>You are now logged in as ".$_SESSION["USER"]." with access level ".$_SESSION["LEVEL"]."</h2>";
+
 if($_SESSION['LEVEL'] == 1) {
-    echo "<a href='admin_main.php'>Enter Main Page</a><br/><br/>";
+    require('admin_main.php');
 }
 elseif($_SESSION['LEVEL'] == 2) {
-     echo "<a href='manager_main.php'>Enter Main Page</a><br/><br/>"; ;
+    
+      require('manager_main.php');
 }
 elseif($_SESSION['LEVEL'] == 3) {
-     echo "<a href='staff_main.php'>Enter Main Page</a><br/><br/>"; ;
+
+      require('staff_main.php');
 }
 else { echo "Undefined"; }
 
-echo "<a href='index.php'>Back to login page</a>";
+// require('index.php');
 
 } else {
 
 $_SESSION["Login"] = "NO";
-header("Location: index.php");
+// header("Location: index.php");
 }
 
 mysqli_close($conn);
