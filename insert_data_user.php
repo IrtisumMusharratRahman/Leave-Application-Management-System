@@ -4,18 +4,17 @@ require ("config.php");
 
 
 $sql = "INSERT INTO user (username, id, password, level)
-VALUES ('Annie', '090909090', 'admin1', 1);";
+VALUES ('Annie', '1001', 'admin1', 1);";
 $sql .= "INSERT INTO user (username, id, password, level)
-VALUES ('Bobby', '123456789', 'manager1', 2);";
+VALUES ('Adam', '1002', 'admin2', 1);";
 $sql .= "INSERT INTO user (username, id, password, level)
-VALUES ('Chad', '43215678','staff1', 3);";
-
+VALUES ('Bobby', '1003', 'manager1', 2);";
 $sql .= "INSERT INTO user (username, id, password, level)
-VALUES ('Adam', '090909091', 'admin2', 1);";
+VALUES ('Beth', '1004', 'manager2', 2);";
 $sql .= "INSERT INTO user (username, id, password, level)
-VALUES ('Beth', '987654321', 'manager2', 2);";
+VALUES ('Chad', '1005','staff1', 3);";
 $sql .= "INSERT INTO user (username, id, password, level)
-VALUES ('Cindy', '98761234','staff2', 3);";
+VALUES ('Cindy', '1006','staff2', 3);";
 
 
 
