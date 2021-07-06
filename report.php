@@ -33,7 +33,7 @@ header("Location: login.php");
 			while($rows = mysqli_fetch_assoc($result)) {
 		?>
 
-	     <tr>
+		<tr>
 			<td><?php echo $rows['name']; ?></td>
 			<td><?php echo $rows['id']; ?></td>
 			<td><?php echo $rows['days']; ?></td>
