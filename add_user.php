@@ -21,7 +21,7 @@ $sql = "INSERT INTO user(username, id, password, level) VALUES ('$new_username',
 
 mysqli_close($conn);
 
-		 echo "<p><a href='add_user.php'>Click here to insert again</a></p>";
+		 echo "<p><a href='user_form.php'>Click here to insert again</a></p>";
 		 echo "<p> <a href= 'admin_main.php'> Go back to main page</a> </p>";
 
 

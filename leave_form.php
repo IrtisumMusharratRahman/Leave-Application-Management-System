@@ -1,7 +1,4 @@
 
-<?php
-	require('create_form.php');
-?>
 
 <html>
 <head>
