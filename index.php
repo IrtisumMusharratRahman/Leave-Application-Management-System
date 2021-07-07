@@ -1,8 +1,9 @@
 <?php
- require('create_database.php');
-	require('create_user.php');
-	require('create_form.php');
-	require('insert_data_user.php');
+require('create_database.php');
+require('create_user.php');
+require('create_form.php');
+require('insert_data_user.php');
+require('insert_data_form.php');
 	
 ?>
 
