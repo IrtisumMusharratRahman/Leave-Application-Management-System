@@ -15,5 +15,5 @@ if (mysqli_query($conn, $sql)) {
   echo "Error creating table: " . mysqli_error($conn);
 }
 
-mysqli_close($conn);
+//mysqli_close($conn);
 ?>
