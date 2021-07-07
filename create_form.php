@@ -10,7 +10,7 @@ $sql = "CREATE TABLE form(
 		reason TEXT(500) NOT NULL)";
 
 if (mysqli_query($conn, $sql)) {
-  echo "<h3>Table student created successfully</h3>";
+  echo "<h3>Table form created successfully</h3>";
 } else {
   echo "Error creating table: " . mysqli_error($conn);
 }

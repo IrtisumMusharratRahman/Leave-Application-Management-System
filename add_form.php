@@ -25,5 +25,6 @@ if ($_SESSION["LEVEL"] == 3) {
 
 
 	     mysqli_close($conn);
-
+		 echo "<p> <a href= 'staff_main.php'> Go back to main page</a> </p>";
 }
+?>

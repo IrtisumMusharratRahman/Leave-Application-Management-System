@@ -1,4 +1,8 @@
 
+<?php
+	require('create_form.php');
+?>
+
 <html>
 <head>
 <title>Leave Application</title>

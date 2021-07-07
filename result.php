@@ -53,4 +53,5 @@ if ($_SESSION["LEVEL"] == 3) {
 <?php }
 	elseif ($_SESSION["LEVEL"] == 2) {
 		echo "Thank You!";}
+	
 		?>
