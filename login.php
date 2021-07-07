@@ -1,12 +1,10 @@
 <?php
-require('create_database.php');
-require('create_user.php');
-require('insert_data_user.php');
-
-
+	require('create_database.php');
+	require('create_user.php');
+	require('insert_data_user.php');
 ?>
 
-	<html>
+<html>
 	<head>
 		<title>Login Page</title>
 	</head>
@@ -22,7 +20,4 @@ require('insert_data_user.php');
 		</form>
 		
 	</body>
-	</html>
-	
-
- 
+</html>
