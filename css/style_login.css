@@ -1,0 +1,44 @@
+* {
+    padding: 5px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("./images/login.jpg");
+    text-align: center;
+    padding-top: 200px;
+
+}
+
+.head{
+    text-transform: uppercase;
+    color:chartreuse;
+    font-size: large;
+    text-align: center;
+    word-spacing: .1rem;
+}
+.form {
+    margin-left: 510px;
+    padding-top: 50px; 
+    max-height: 500px;
+    max-width: 500px;
+    border: solid 2px whitesmoke;
+  }
+
+  .btn {
+    display: block;
+    height: 40px;
+    width: 150px;
+    border-radius: 25px;
+    font-size: medium;
+    font-weight: 500px;
+    margin-left: 190px;
+}
+
+.btn:hover{
+
+    color:black;
+    background-color:darkorange;
+    transition: .5s;
+}

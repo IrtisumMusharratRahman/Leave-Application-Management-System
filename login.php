@@ -7,16 +7,21 @@
 <html>
 	<head>
 		<title>Login Page</title>
+		<link rel="stylesheet" href="./css/style_login.css">
+
+
+
 	</head>
 	<body>
 
-		<b>Welcome! Please log in first</b>
+		<b class="head">Welcome! Leave Application Management System</b>
 	    <br/>
 		<br/>
-		<form method="post" action="check_login.php">
-		<p>Username: <input type="text" name="username" /></p>
-		<p>Password: <input type="password" name="password" /></p>
-		<p><input type="submit" value="Login" /></p>
+		<form method="post" class= "form" action="check_login.php">
+		<p>Username: <input type="text" placeholder="username" name="username" /></p>
+		<p>Password: <input type="password" placeholder="password" name="password" /></p>
+		<br/>
+		<p><input type="submit" class="btn" value="Login" /></p>
 		</form>
 		
 	</body>
