@@ -9,10 +9,10 @@ if ($_SESSION["LEVEL"] == 1) {
 ?>
 
 	<html>
-	<head><title>Viewing User Data</title><head>
+	<head><title>Staff Data</title><head>
 	<body>
 
-	<h1>View User Details</h1>
+	<h1>Staff Details</h1>
 
 		<?php
 	     require ("config.php");
@@ -25,7 +25,7 @@ if ($_SESSION["LEVEL"] == 1) {
 		<table width="600" border="1" cellspacing="0" cellpadding="3">
 
 		<tr>
-		<td align="center"><strong>username</strong></td>
+		<td align="center"><strong>Staff Name</strong></td>
 		<td align="center"><strong>Password</strong></td>
 		<td align="center"><strong>Level</strong></td>
 		<td align="center"><strong>Update</strong></td>
@@ -40,8 +40,8 @@ if ($_SESSION["LEVEL"] == 1) {
 			<td><?php echo $rows['username']; ?></td>
 			<td><?php echo $rows['password']; ?></td>
 			<td><?php echo $rows['level']; ?></td>
-			<td align="center"> <a href="update_info_form.php?id=<?php echo $rows['id']; ?>">update</a> </td>
-			<td align="center"> <a href="delete_info.php?id=<?php echo $rows['id']; ?>">delete</a> </td>
+			<td align="center"> <button><a href="update_info_form.php?id=<?php echo $rows['id']; ?>">Update</a></button> </td>
+			<td align="center"> <button><a href="delete_info.php?id=<?php echo $rows['id']; ?>">Delete</a></button> </td>
 		</tr>
 
 		<?php

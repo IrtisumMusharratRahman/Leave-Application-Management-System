@@ -10,7 +10,7 @@ header("Location: login.php");
 	<head><title>Viewing Student Data</title><head>
 	<body>
 
-	<h1>View Student Details</h1>
+	<h1>Staff Leave Application</h1>
 
 		<?php
 	     require ("config.php");
@@ -48,9 +48,10 @@ header("Location: login.php");
 
 	    </table>
 
+		
  	<?php }
 
-	echo "<p><a href='logout.php'>LOGOUT</a></p>";
+	echo "<p><button><a href='logout.php'>LOGOUT</a></button></p>";
 
   ?>
 	</body>
