@@ -2,73 +2,77 @@
 session_start();
 
 if ($_SESSION["Login"] != "YES")
-header("Location: login.php");
+	header("Location: login.php");
 
 if ($_SESSION["LEVEL"] == 1) {
 
 ?>
 
 	<html>
-	<head><title>Staff Data</title><head>
-	<body>
 
-	<h1>Staff Details</h1>
+	<head>
+		<title>Staff Data</title>
 
-		<?php
-	     require ("config.php");
+		<head>
 
-	     $sql = "SELECT * FROM user";
-		 $result = mysqli_query($conn, $sql);
+		<body>
 
-		 if (mysqli_num_rows($result) > 0) { 	?>
+			<h1>Staff Details</h1>
 
-		<table width="600" border="1" cellspacing="0" cellpadding="3">
+			<?php
+			require("config.php");
 
-		<tr>
-		<td align="center"><strong>Staff Name</strong></td>
-		<td align="center"><strong>Password</strong></td>
-		<td align="center"><strong>Level</strong></td>
-		<td align="center"><strong>Update</strong></td>
-		<td align="center"><strong>Delete</strong></td>
-		</tr>
+			$sql = "SELECT * FROM user";
+			$result = mysqli_query($conn, $sql);
 
-		<?php
-			while($rows = mysqli_fetch_assoc($result)) {
-		?>
+			if (mysqli_num_rows($result) > 0) { 	?>
 
-	     <tr>
-			<td><?php echo $rows['username']; ?></td>
-			<td><?php echo $rows['password']; ?></td>
-			<td><?php echo $rows['level']; ?></td>
-			<td align="center"> <button><a href="update_info_form.php?id=<?php echo $rows['id']; ?>">Update</a></button> </td>
-			<td align="center"> <button><a href="delete_info.php?id=<?php echo $rows['id']; ?>">Delete</a></button> </td>
-		</tr>
+				<table width="600" border="1" cellspacing="0" cellpadding="3">
 
-		<?php
+					<tr>
+						<td align="center"><strong>Staff Name</strong></td>
+						<td align="center"><strong>Password</strong></td>
+						<td align="center"><strong>Level</strong></td>
+						<td align="center"><strong>Update</strong></td>
+						<td align="center"><strong>Delete</strong></td>
+					</tr>
 
-			}
-		} else {
-			echo "<h3>There are no records to show</h3>";
-			}
+					<?php
+					while ($rows = mysqli_fetch_assoc($result)) {
+					?>
 
-	     mysqli_close($conn);
-	   ?>
+						<tr>
+							<td><?php echo $rows['username']; ?></td>
+							<td><?php echo $rows['password']; ?></td>
+							<td><?php echo $rows['level']; ?></td>
+							<td align="center"> <button><a href="update_info_form.php?id=<?php echo $rows['id']; ?>">Update</a></button> </td>
+							<td align="center"> <button><a href="delete_info.php?id=<?php echo $rows['id']; ?>">Delete</a></button> </td>
+						</tr>
 
-	    </table>
+				<?php
 
-		 <br/><br/>
+					}
+				} else {
+					echo "<h3>There are no records to show</h3>";
+				}
 
-	   <button onclick="window.location.href='check_login.php';">Previous Page</button>
+				mysqli_close($conn);
+				?>
 
- 	<?php }
-	else if ($_SESSION["LEVEL"] != 1) {
+				</table>
 
-	echo "<p>Wrong User Level! You are not authorized to view this page</p>";
+				<br /><br />
 
-	echo "<p><a href='logout.php'>LOGOUT</a></p>";
+				<button onclick="window.location.href='check_login.php';">Previous Page</button>
 
-   }
+			<?php } else if ($_SESSION["LEVEL"] != 1) {
 
-  ?>
-	</body>
+			echo "<p>Wrong User Level! You are not authorized to view this page</p>";
+
+			echo "<p><a href='logout.php'>LOGOUT</a></p>";
+		}
+
+			?>
+		</body>
+
 	</html>
