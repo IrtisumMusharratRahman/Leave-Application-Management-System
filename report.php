@@ -30,7 +30,7 @@ header("Location: login.php");
 		</tr>
 
 		<?php
-			while($rows = mysqli_fetch_assoc($result)) {
+		$rows = mysqli_fetch_assoc($result)
 		?>
 
 		<tr>
@@ -39,7 +39,7 @@ header("Location: login.php");
 			<td><?php echo $rows['days']; ?></td>
       <td><?php echo $rows['reason']; ?></td>
 		</tr>
-		}
+		
 
 		<?php 
 
