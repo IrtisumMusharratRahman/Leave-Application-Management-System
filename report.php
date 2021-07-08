@@ -10,7 +10,7 @@ header("Location: login.php");
 	<head><title>Viewing Student Data</title><head>
 	<body>
 
-	<h1>Staff Leave Application</h1>
+	<h1>View Student Details</h1>
 
 		<?php
 	     require ("config.php");
@@ -30,7 +30,7 @@ header("Location: login.php");
 		</tr>
 
 		<?php
-		$rows = mysqli_fetch_assoc($result);
+			while($rows = mysqli_fetch_assoc($result)) {
 		?>
 
 		<tr>
@@ -39,9 +39,8 @@ header("Location: login.php");
 			<td><?php echo $rows['days']; ?></td>
       <td><?php echo $rows['reason']; ?></td>
 		</tr>
-		}
 
-		<?php 
+		<?php }
 
 
 	     mysqli_close($conn);
@@ -49,12 +48,11 @@ header("Location: login.php");
 
 	    </table>
 
-		<br><br>
-	 
-		<button onclick="window.location.href='check_login.php';">Previous Page</button>
-		
-		
+ 	<?php }
 
+	
 
+  ?>
+  <button onclick="window.location.href='check_login.php';">Previous Page</button>
 	</body>
 	</html>
