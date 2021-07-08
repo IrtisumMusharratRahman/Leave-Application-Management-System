@@ -9,14 +9,14 @@ header("Location: login.php");
 $ID = $_POST["id"]?? "";
 $username = $_POST["username"];
 $Password = $_POST["password"];
-
+$user_level = $_POST["level"];
 
 $_SESSION["USER"] = $username;
 $_SESSION["PASS"] = $Password;
+$_SESSION["LEVEL"] =$user_level;
 
 
-
-	     $sql = "UPDATE user SET username='$username', password='$Password'  WHERE id='$ID'";
+	     $sql = "UPDATE user SET username='$username', password='$Password', level='$user_level'  WHERE id='$ID'";
 
 	     if (mysqli_query($conn, $sql)) {
 			echo '<script>

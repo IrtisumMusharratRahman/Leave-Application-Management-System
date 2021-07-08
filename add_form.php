@@ -8,7 +8,7 @@ if ($_SESSION["LEVEL"] == 3) {
 
 
 	     $name = $_POST["name"];
-	     $id = $_POST["id"];
+	     $id = $_SESSION["id"];
 	     $days = $_POST["days"];
        $reason = $_POST["reason"];
 	   //$status = "New Application";

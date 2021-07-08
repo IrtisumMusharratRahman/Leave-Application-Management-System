@@ -1,4 +1,7 @@
-
+<?php
+session_start();
+require ("config.php");
+?>
 
 <html>
 <head>
@@ -14,14 +17,21 @@
 <h2> Application Form </h2>
 
 <table>
-	<tr>
-    	<td> Staff name : </td>
-        <td> <input type="text" name="name" size="30"/> </td>
+	
+    <tr>
+    	<td> Staff Username : </td>
+        <td> <?php  echo $_SESSION["USER"]   ?> </td>
     </tr>
+
 
 	<tr>
     	<td> Staff ID: </td>
-        <td>  <input type="text" name="id" size="30"/> </td>
+        <td>  <?php  echo $_SESSION["id"]   ?> </td>
+    </tr>
+
+    <tr>
+    	<td> Staff Full Name : </td>
+        <td> <input type="text" name="name" size="30"/> </td>
     </tr>
 
     <tr>
