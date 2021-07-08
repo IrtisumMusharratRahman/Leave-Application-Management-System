@@ -23,7 +23,7 @@ if ($_SESSION["LEVEL"] == 3) {
 
 		 if (mysqli_num_rows($result) > 0) {
 
-			?>
+		?>
 
 		<h3>Your search result:</h3>
 
@@ -54,4 +54,13 @@ if ($_SESSION["LEVEL"] == 3) {
 	elseif ($_SESSION["LEVEL"] == 2) {
 		echo "Thank You!";}
 	
+
+		
 		?>
+
+		<button onclick="window.location.href='check_login.php';">Previous Page</button>
+
+	</body>
+</html>
+	
+

@@ -1,8 +1,12 @@
 <?php
-	// require('create_database.php');
-	// require('create_user.php');
-	// require('insert_data_user.php');
+session_start();
+require('config.php');
+
+$_SESSION["Login"]="XXX";
 ?>
+
+
+
 
 <html>
 	<head>

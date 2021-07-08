@@ -3,6 +3,9 @@ session_start();
 require('config.php');
 
 
+if(!($_SESSION["Login"]=="YES" ||$_SESSION["Login"]=="NO" ))
+{
+
 $myusername = $_POST["username"];
 $mypassword = $_POST["password"];
 
@@ -18,6 +21,7 @@ $password=$rows["password"];
 $user_level=$rows["level"];
 
 $count=mysqli_num_rows($result);
+
 
 if($count==1){
 
@@ -48,6 +52,26 @@ else { echo "Undefined"; }
 $_SESSION["Login"] = "NO";
 // header("Location: index.php");
 }
+
+
+
+}else{
+
+if($_SESSION['LEVEL'] == 1) {
+    require('admin_main.php');
+}
+elseif($_SESSION['LEVEL'] == 2) {
+    
+      require('manager_main.php');
+}
+elseif($_SESSION['LEVEL'] == 3) {
+
+      require('staff_main.php');
+}
+
+}
+
+
 
 mysqli_close($conn);
 

@@ -8,7 +8,7 @@
     <a href="view_info.php">Edit/Delete Info for Any User Wanted</a> <br/><br/>
     <a href="report.php">View Leave Applications Report</a> <br/><br/>
 
-	<a href="logout.php">LOGOUT</a>
+	<button onclick="window.location.href='logout.php';"> LOGOUT </button>
 
 	</body>
 	</html>

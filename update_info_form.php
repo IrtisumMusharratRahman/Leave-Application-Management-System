@@ -48,6 +48,8 @@ header("Location: login.php");
 
 </form>
 
+<button onclick="window.location.href='check_login.php';">Previous Page</button>
+
 </body>
 </html>
 

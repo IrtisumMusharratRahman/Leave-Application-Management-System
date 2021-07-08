@@ -61,7 +61,8 @@ if ($_SESSION["LEVEL"] == 1) {
 
 		<br><br>
 		<a href="report.php">Click here to view the report of leave forms</a> <br/><br/>
-	   <a href="logout.php">LOGOUT</a>
+
+	   <button onclick="window.location.href='check_login.php';">Previous Page</button>
 
  	<?php }
 	else if ($_SESSION["LEVEL"] != 1) {

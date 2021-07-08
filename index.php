@@ -21,7 +21,8 @@ require('insert_data_form.php');
 	    <br/>
 		<br/>
 	
-		 <button><a href="login.php">Next</a></button>
+	<button onclick="window.location.href='login.php';">System Start</button>
+		 
 	
 		
 	</body>

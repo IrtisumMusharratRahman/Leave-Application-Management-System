@@ -55,9 +55,13 @@ if ($_SESSION["LEVEL"] == 2) {
 
 	    </table>
 
-
 		<br><br>
-	    <a href="logout.php">LOGOUT</a>
+	 
+		<button onclick="window.location.href='check_login.php';">Previous Page</button>
+		
+	
+		
+		
 
 	</body>
 	</html>

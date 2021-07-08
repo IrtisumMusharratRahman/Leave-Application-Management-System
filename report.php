@@ -39,8 +39,9 @@ header("Location: login.php");
 			<td><?php echo $rows['days']; ?></td>
       <td><?php echo $rows['reason']; ?></td>
 		</tr>
+		}
 
-		<?php }
+		<?php 
 
 
 	     mysqli_close($conn);
@@ -48,11 +49,12 @@ header("Location: login.php");
 
 	    </table>
 
+		<br><br>
+	 
+		<button onclick="window.location.href='check_login.php';">Previous Page</button>
 		
- 	<?php }
+		
 
-	echo "<p><button><a href='logout.php'>LOGOUT</a></button></p>";
 
-  ?>
 	</body>
 	</html>

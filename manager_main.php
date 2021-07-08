@@ -8,7 +8,7 @@
     <a href="forms_report.php">Leave Forms</a> <br/><br/>
 		<a href="report.php">Report</a> <br/><br/>
 
-	<a href="logout.php">LOGOUT</a>
+	<button onclick="window.location.href='logout.php';"> LOGOUT </button>
 
 	</body>
 	</html>
