@@ -7,6 +7,24 @@ require ("config.php");
 <head>
 <title>Leave Application</title>
 
+
+<script type="text/javascript">
+        function GetDays(){
+                var dropdt = new Date(document.getElementById("end").value);
+                var pickdt = new Date(document.getElementById("start").value);
+                return parseInt((dropdt - pickdt) / (24 * 3600 * 1000));
+        }
+
+        function cal(){
+        if(document.getElementById("end")){
+            document.getElementById("numdays2").value=GetDays();
+        }  
+    }
+
+    </script>
+
+
+
 </head>
 
 <body>
@@ -34,10 +52,29 @@ require ("config.php");
         <td> <input type="text" name="name" size="30"/> </td>
     </tr>
 
+
     <tr>
-    	<td> Number of Days: </td>
-        <td>  <input type="text" name="days" size="30"/> </td>
+    	<td> Start Date: </td>
+        <td> 
+        <input type="date" class="textbox" id="start" name="start_date" onchange="cal()"/>
+         </td>
     </tr>
+
+    <tr>
+    	<td> End Date: </td>
+        <td> 
+        <input type="date" class="textbox" id="end" name="end_date" onchange="cal()"/>
+         </td>
+    </tr>
+
+
+    <tr>
+            <td> Number of days: </td>
+            <td> 
+            <input type="text" class="textbox" id="numdays2" name="numdays"/>
+            </td>
+    </tr>
+
 
     <tr>
     	<td> Reason: </td>
