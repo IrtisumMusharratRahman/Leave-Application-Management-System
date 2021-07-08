@@ -9,50 +9,42 @@ if ($_SESSION["LEVEL"] == 3) {
 ?>
 
 <html>
-	<head><title>Subject List</title><HEAD>
+	<head><title>Staff Application Status</title><HEAD>
 	<body>
 
 	  <?php
-	     require ("config.php");
+	     
+		 $ID = $_SESSION["id"];
 
-		 $find=$_POST['id'] ?? "";
+		 require ("config.php");
 
-	     $sql = "SELECT * FROM form WHERE id LIKE '%$find%'";
-
+		 $sql="SELECT * FROM form WHERE id='$ID'";
 		 $result = mysqli_query($conn, $sql);
+		 $rows=mysqli_fetch_assoc($result);
 
-		 if (mysqli_num_rows($result) > 0) {
 
 		?>
 
-		<h3>Your search result:</h3>
+		<h1>Staff Application Status</h1>
 
 		<table width="600" border="1" cellspacing="0" cellpadding="3">
 
 		<tr>
 		<td align="center"><strong>Status</strong></td>
-		<?php if (isset($_POST['approve'])){
-			$status = "Approved";
-		}
-		elseif (isset($_POST['decline'])) {
-			$status = "Declined";
-		}
-			?>
-		<td align="center"> <?php echo $status ?> </td>
+		
+		<td align="center"> <?php echo $rows['status'] ?> </td>
 	 	</tr>
 
 		</table>
 
 		<?php
-	   		}
-			else {
-				echo "<h3>No records found</h3>"; }
+	   		
 
 	     mysqli_close($conn);
-	   ?>
-<?php }
+	   
+ 	}
 	elseif ($_SESSION["LEVEL"] == 2) {
-		echo "Thank You!";}
+		echo "Thank You!";
 	
 
 	
@@ -84,7 +76,7 @@ if ($_SESSION["LEVEL"] == 3) {
           mysqli_close($conn);
 
 
-
+			}
 		?>
 
 		<button onclick="window.location.href='check_login.php';">Previous Page</button>
