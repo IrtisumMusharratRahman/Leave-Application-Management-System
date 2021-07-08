@@ -7,7 +7,10 @@ header("Location: login.php");
 
 ?>
 	<html>
-	<head><title>Updating User Data</title><head>
+	<head><title>Updating User Data</title>
+	<link rel="stylesheet" href="./css/update_info_form.css">
+	<head>
+
 	<body>
 
 	<h1>Update User Data Form</h1>
@@ -27,13 +30,13 @@ header("Location: login.php");
 
 
 <form name="form1" method="post" action="update_info.php">
-<table border="0" cellspacing="5" cellpadding="0">
+<table class="center" border="0" cellspacing="5" cellpadding="0">
 
 <tr>
 <td align="center">&nbsp;</td>
-<td align="center"><strong>Username</strong></td>
-<td align="center"><strong>Password</strong></td>
-<td align="center"><strong>Level</strong></td>
+<td class="Username" align="center"><strong>Username</strong></td>
+<td class="password" align="center"><strong>Password</strong></td>
+<td class="level" align="center"><strong>Level</strong></td>
 <td align="center">&nbsp;</td>
 </tr>
 
@@ -42,14 +45,14 @@ header("Location: login.php");
 <td align="center"><input name="username" type="text" id="username" size="50" value="<?php echo $rows['username']; ?>"></td>
 <td align="center"><input name="password" type="text" id="password" size="13" value="<?php echo $rows['password']; ?>"></td>
 <td align="center"><input name="level" type="text" id="level"  size="1" value="<?php echo $rows['level']; ?>"></td>
-<td align="center"><input type="submit" name="Submit" value="Update"></td>
+<td align="center"><input type="submit" id="update" name="Submit" value="Update"></td>
 </tr>
 
 </table>
 
 </form>
 
-<button onclick="window.location.href='check_login.php';">Previous Page</button>
+<button id="p_page" onclick="window.location.href='check_login.php';">Previous Page</button>
 
 </body>
 </html>

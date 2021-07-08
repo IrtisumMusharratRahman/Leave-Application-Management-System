@@ -1,0 +1,137 @@
+body
+{
+    background: linear-gradient(to right, #7b4397, #dc2430);
+}
+h1
+{
+    font-family: Georgia, sans-serif;
+    font-size: 3em;
+    letter-spacing: -2px;
+    text-align: center;
+    background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+    border-radius: 32px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px #000000;
+  
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+
+.username
+{
+    font-family: Georgia, sans-serif;
+    font-size: 20px;
+    background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+    border-radius: 5px;
+}
+
+.username:hover
+{
+    background: yellowgreen;
+}
+
+#username
+{
+    font-family: Georgia, sans-serif;
+    font-size: 20px;   
+    background:linear-gradient(to left, #E0EAFC 0%, #CFDEF3 100%);
+}
+#username:hover
+{
+    background: rgb(49, 46, 228);
+}
+
+.password
+{
+    font-family: Georgia, sans-serif;
+    font-size: 20px;
+    background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+    border-radius: 5px;
+}
+.password:hover
+{
+    background: yellowgreen;
+}
+
+#password
+{
+    font-family: Georgia, sans-serif;
+    font-size: 20px;   
+    background:linear-gradient(to left, #E0EAFC 0%, #CFDEF3 100%);
+}
+#password:hover
+{
+    background: rgb(49, 46, 228);
+}
+
+.level
+{
+    font-family: Georgia, sans-serif;
+    font-size: 20px;
+    background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+    border-radius: 5px;
+}
+.level:hover
+{
+    background: yellowgreen;
+}
+
+#level
+{
+    font-family: Georgia, sans-serif;
+    font-size: 20px;   
+    background:linear-gradient(to left, #E0EAFC 0%, #CFDEF3 100%);
+}
+#level:hover
+{
+    background: rgb(49, 46, 228);
+}
+
+#update
+{  
+    background: #2E94E3;
+    color: #fff;
+    border: none;
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    transition-property: background;
+    
+}
+#update:hover
+{
+    background:green;
+}
+
+#p_page
+{ 
+    background: #2E94E3;
+    color: #fff;
+    border: none;
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    transition-property: background;
+    margin-left: 700px;
+    
+}
+#p_page:hover
+{
+    background:green;
+}
