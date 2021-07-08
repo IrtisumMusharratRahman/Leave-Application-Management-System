@@ -14,7 +14,8 @@ header("Location: login.php");
 
 <?php
 
-		 $ID = $_GET['id'] ?? "";
+		 $ID =$_SESSION["id"];
+		
 
 		 require ("config.php");
 
@@ -40,7 +41,7 @@ header("Location: login.php");
 <td align="center"><input name="id" type="hidden" id="id" value="<?php echo $rows['id']; ?>"></td>
 <td align="center"><input name="username" type="text" id="username" size="50" value="<?php echo $rows['username']; ?>"></td>
 <td align="center"><input name="password" type="text" id="password" size="13" value="<?php echo $rows['password']; ?>"></td>
-<td align="center"><input name="level" type="text" id="level"  size="1" value="<?php echo $rows['level']; ?>"></td>
+<td align="center"><?php echo $rows['level']; ?></td>
 <td align="center"><input type="submit" name="Submit" value="Update"></td>
 </tr>
 
@@ -57,3 +58,5 @@ header("Location: login.php");
 
 	     mysqli_close($conn);
 ?>
+
+

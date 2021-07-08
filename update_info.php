@@ -5,22 +5,35 @@ require ("config.php");
 if ($_SESSION["Login"] != "YES")
 header("Location: login.php");
 
-$ID = $_GET["id"]?? "";
 
+$ID = $_POST["id"]?? "";
 $username = $_POST["username"];
+$Password = $_POST["password"];
 
 
-	     $sql = "UPDATE user SET username='$username' WHERE id=2";
+$_SESSION["USER"] = $username;
+$_SESSION["PASS"] = $Password;
+
+
+
+	     $sql = "UPDATE user SET username='$username', password='$Password'  WHERE id='$ID'";
 
 	     if (mysqli_query($conn, $sql)) {
-			echo "<h3>Record updated successfully</h3>";
+			echo '<script>
+			alert("Record updated successfully");
+			window.location.href="check_login.php";
+			</script>';
+
 			} else {
 				echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 				}
           mysqli_close($conn);
 
-			echo "<p><a href='view_info.php'>Click here to update another user's information</a></p>";
-		  echo "<p> <a href= 'admin_main.php'> Go back to main page</a> </p>"
+		
+		  
 
 
   ?>
+
+
+
