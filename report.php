@@ -10,7 +10,7 @@ header("Location: login.php");
 	<head><title>Viewing Student Data</title><head>
 	<body>
 
-	<h1>View Student Details</h1>
+	<h1>View Student Details </h1>
 
 		<?php
 	     require ("config.php");
