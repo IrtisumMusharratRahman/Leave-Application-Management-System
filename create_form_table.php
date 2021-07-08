@@ -7,7 +7,8 @@ $sql = "CREATE TABLE form(
 		id VARCHAR(15),
  		name VARCHAR(50),
  		days INT(2),
-		reason TEXT(500) NOT NULL)";
+		reason TEXT(500) NOT NULL,
+		status VARCHAR(50))";
 
 if (mysqli_query($conn, $sql)) {
   echo "<h3>Table form created successfully</h3>";

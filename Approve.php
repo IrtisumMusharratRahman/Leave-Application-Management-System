@@ -14,7 +14,7 @@ header("Location: login.php");   //send user to login page
 
 <?php
 
-		 $ID = $_GET['id'] ?? "";
+		 $ID = $_SESSION["Staffid"];
 
 		 require ("config.php");
 
@@ -52,8 +52,8 @@ header("Location: login.php");   //send user to login page
 
 <br/>
 
-<input type="submit" name="approve" value="Approve">
-<input type="submit" name="decline" value="Decline">
+<input type="submit" name="Approval" value="Approve">
+<input type="submit" name="Approval" value="Decline">
 
 </form>
 

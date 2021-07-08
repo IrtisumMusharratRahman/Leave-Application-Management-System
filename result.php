@@ -55,7 +55,36 @@ if ($_SESSION["LEVEL"] == 3) {
 		echo "Thank You!";}
 	
 
-		
+	
+		 $ID = $_SESSION["Staffid"];
+
+		 require ("config.php");
+
+		 $sql="SELECT * FROM form WHERE id='$ID'";
+		 $result = mysqli_query($conn, $sql);
+		 $rows=mysqli_fetch_assoc($result);
+
+
+		 if($_POST['Approval']=="Approve")
+	     $sql = "UPDATE form SET status='Approved'  WHERE id='$ID'";
+		 elseif($_POST['Approval']=="Decline")
+		 $sql = "UPDATE form SET status='Decline'  WHERE id='$ID'";
+
+
+
+	     if (mysqli_query($conn, $sql)) {
+			echo '<script>
+			alert("Record updated successfully");
+			window.location.href="check_login.php";
+			</script>';
+
+			} else {
+				echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+				}
+          mysqli_close($conn);
+
+
+
 		?>
 
 		<button onclick="window.location.href='check_login.php';">Previous Page</button>

@@ -11,12 +11,12 @@ if ($_SESSION["LEVEL"] == 3) {
 	     $id = $_SESSION["id"];
 	     $days = $_POST["days"];
        $reason = $_POST["reason"];
-	   //$status = "New Application";
+	   $status = "New Application";
 
 
 		 require ("config.php");
 
-	     $sql = "INSERT INTO form(id, name, days, reason) VALUES ('$id','$name','$days', '$reason')" ;
+	     $sql = "INSERT INTO form(id, name, days, reason, status) VALUES ('$id','$name','$days', '$reason', '$status' )" ;
 
 		 if (mysqli_query($conn, $sql)) {
 			echo "<h3>New record created successfully</h3>";

@@ -17,7 +17,7 @@ if ($_SESSION["LEVEL"] == 2) {
 		<?php
 	     require ("config.php");
 
-	     $sql = "SELECT * FROM form";
+	     $sql = "SELECT * FROM form where status='New Application'";
 		 $result = mysqli_query($conn, $sql);
 
 		 if (mysqli_num_rows($result) > 0) { 	?>
@@ -28,7 +28,8 @@ if ($_SESSION["LEVEL"] == 2) {
 		<td align="center"><strong>Name</strong></td>
 		<td align="center"><strong>ID</strong></td>
 		<td align="center"><strong>Days</strong></td>
-    <td align="center"><strong>Reason</strong></td>
+		<td align="center"><strong>Reason</strong></td>
+		<td align="center"><strong>Status</strong></td>
 		</tr>
 
 		<?php
@@ -39,8 +40,12 @@ if ($_SESSION["LEVEL"] == 2) {
 			<td><?php echo $rows['name']; ?></td>
 			<td><?php echo $rows['id']; ?></td>
 			<td><?php echo $rows['days']; ?></td>
-      <td><?php echo $rows['reason']; ?></td>
-      <td align="center"> <a href="Approve.php?id=<?php echo $rows['id']; ?>">Approval</a> </td>
+			<td><?php echo $rows['reason']; ?></td>
+			<td><?php echo $rows['status']; ?></td>
+      <td align="center"> 
+	  <a href="Approve.php?id=<?php $_SESSION["Staffid"] = $rows['id']; ?>">Approval</a></td>
+		
+		
 		</tr>
 
 		<?php }

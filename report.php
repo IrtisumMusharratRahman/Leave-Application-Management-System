@@ -26,7 +26,8 @@ header("Location: login.php");
 		<td align="center"><strong>Name</strong></td>
 		<td align="center"><strong>ID</strong></td>
 		<td align="center"><strong>Days</strong></td>
-    <td align="center"><strong>Reason</strong></td>
+		<td align="center"><strong>Reason</strong></td>
+		<td align="center"><strong>Status</strong></td>
 		</tr>
 
 		<?php
@@ -37,7 +38,8 @@ header("Location: login.php");
 			<td><?php echo $rows['name']; ?></td>
 			<td><?php echo $rows['id']; ?></td>
 			<td><?php echo $rows['days']; ?></td>
-      <td><?php echo $rows['reason']; ?></td>
+			<td><?php echo $rows['reason']; ?></td>
+			<td><?php echo $rows['status']; ?></td>
 		</tr>
 
 		<?php }
