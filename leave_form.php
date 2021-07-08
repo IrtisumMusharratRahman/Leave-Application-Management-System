@@ -24,7 +24,7 @@ require ("config.php");
     </tr>
 
 
-	<tr>s
+	<tr>
     	<td> Staff ID      : </td>
         <td>  <?php  echo $_SESSION["id"]   ?> </td>
     </tr>
