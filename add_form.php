@@ -9,14 +9,19 @@ if ($_SESSION["LEVEL"] == 3) {
 
 	     $name = $_POST["name"];
 	     $id = $_SESSION["id"];
-	     $days = $_POST["days"];
+	     $days = $_POST["numdays"];
        $reason = $_POST["reason"];
 	   $status = "New Application";
+	   $Sdate= $_POST["start_date"];
+	   $Edate= $_POST["end_date"];
+
+	  $_SESSION["Start_Date"]= $Sdate;
+	  $_SESSION["End_Date"]=  $Edate;
 
 
 		 require ("config.php");
 
-	     $sql = "INSERT INTO form(id, name, days, reason, status) VALUES ('$id','$name','$days', '$reason', '$status' )" ;
+	     $sql = "INSERT INTO form(id, name, Sdate, Edate, days, reason, status) VALUES ('$id','$name','$Sdate','$Edate','$days', '$reason', '$status' )" ;
 
 		 if (mysqli_query($conn, $sql)) {
 			echo "<h3>New record created successfully</h3>";
