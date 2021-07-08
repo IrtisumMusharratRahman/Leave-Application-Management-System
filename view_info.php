@@ -56,11 +56,7 @@ if ($_SESSION["LEVEL"] == 1) {
 
 	    </table>
 
-		<br><br>
-		<a href="user_form.php">Click here to insert student</a>
-
-		<br><br>
-		<a href="report.php">Click here to view the report of leave forms</a> <br/><br/>
+		 <br/><br/>
 
 	   <button onclick="window.location.href='check_login.php';">Previous Page</button>
 
