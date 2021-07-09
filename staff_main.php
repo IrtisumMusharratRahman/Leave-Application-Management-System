@@ -20,7 +20,8 @@
       <h3>Main Page <span>Staffs</span></h3>
     </div>
     <div class="right_area">
-      <button class="logout_btn" onclick="window.location.href='logout.php';"> Logout </button>
+      <button class="logout_btn" onclick="window.location.href='logout.php';"> Logout |<img src="./css/images/logout.png" alt="Italian Trulli"> </button>
+
 
     </div>
   </header>
