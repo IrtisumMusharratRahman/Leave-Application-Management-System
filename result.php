@@ -27,15 +27,34 @@ if ($_SESSION["LEVEL"] == 3) {
 
 		<h1>Staff Application Status</h1>
 
+
+
 		<table width="600" border="1" cellspacing="0" cellpadding="3">
 
-			<tr>
-				<td align="center"><strong>Status</strong></td>
+				<tr>
+					<td align="center"><strong>Name</strong></td>
+					<td align="center"><strong>ID</strong></td>
+					<td align="center"><strong>Start Date</strong></td>
+					<td align="center"><strong>End Date</strong></td>
+					<td align="center"><strong>Number of Days</strong></td>
+					<td align="center"><strong>Reason</strong></td>
+					<td align="center"><strong>Status</strong></td>
+				</tr>
 
-				<td align="center"> <?php echo $rows['status'] ?> </td>
-			</tr>
+				
 
-		</table>
+					<tr>
+						<td><?php echo $rows['name']; ?></td>
+						<td><?php echo $rows['id']; ?></td>
+						<td><?php echo $rows['Sdate']; ?></td>
+						<td><?php echo $rows['Edate']; ?></td>
+						<td><?php echo $rows['days']; ?></td>
+						<td><?php echo $rows['reason']; ?></td>
+						<td><?php echo $rows['status']; ?></td>
+					</tr>
+
+				<table> 
+
 
 	<?php
 
