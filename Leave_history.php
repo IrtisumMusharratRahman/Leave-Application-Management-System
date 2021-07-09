@@ -9,7 +9,7 @@ if ($_SESSION["Login"] != "YES") //if the user is not logged in or has been logg
 <html>
 
 <head>
-	<title>Subject List</title>
+	<title>History</title>
 
 </head>
 
@@ -17,9 +17,7 @@ if ($_SESSION["Login"] != "YES") //if the user is not logged in or has been logg
 
 		<?php
 		require("./Table/config.php");
-		if(isset($_POST['staffID']))
-		$find = $_POST['staffID'];
-		else
+		
 		$find = $_SESSION['id'];
 		$sql = "SELECT * FROM form WHERE id LIKE '%$find%'";
 		$result = mysqli_query($conn, $sql);
@@ -41,7 +39,7 @@ if ($_SESSION["Login"] != "YES") //if the user is not logged in or has been logg
 
 				<!-- Print table heading -->
 				<tr>
-					<th align="center"><strong>Name</strong></th>
+					<th align="center" rowspan="2" ><strong>Name</strong></th>
 					<th  align="center"><strong>ID</strong></th>
 					<th  align="center"><strong>Start Date</strong></th>
 					<th  align="center"><strong>End Date</strong></th>
@@ -72,7 +70,7 @@ if ($_SESSION["Login"] != "YES") //if the user is not logged in or has been logg
 	<?php
 				}
 			} else {
-				echo "<h3>No records found</h3>";
+				echo '<script>alert("No records found")</script>';
 			}
 
 			mysqli_close($conn);
@@ -80,14 +78,7 @@ if ($_SESSION["Login"] != "YES") //if the user is not logged in or has been logg
 
 	</table>
 
-		<?php   
-	if(isset($_POST['staffID'])){
-	?>
-		echo "<button onclick="window.location.href='search_form.php';">Previous Page</button>"
 	
-	<?php   
-	}
-	?>
 
 
 		<button onclick="window.location.href='check_login.php';">Main Page</button>

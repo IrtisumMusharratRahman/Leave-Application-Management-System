@@ -42,7 +42,7 @@ if (!($_SESSION["Login"] == "YES" || $_SESSION["Login"] == "NO")) {         // t
             } elseif ($_SESSION['LEVEL'] == 2) {
                   require('manager_main.php');
             } elseif ($_SESSION['LEVEL'] == 3) {
-                  require('staff_main.php');
+                  require('staff_main.html');
             } else {
                   echo "Undefined";
             }
@@ -61,7 +61,7 @@ if (!($_SESSION["Login"] == "YES" || $_SESSION["Login"] == "NO")) {         // t
       } elseif ($_SESSION['LEVEL'] == 2) {
             require('manager_main.php');
       } elseif ($_SESSION['LEVEL'] == 3) {
-            require('staff_main.php');
+            require('staff_main.html');
       }
 }
 
