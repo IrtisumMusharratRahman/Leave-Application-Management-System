@@ -185,7 +185,7 @@ label #sidebar_btn:hover {
   line-height: 2.5rem;
   font-size: 1rem;
   padding: 0px 20px 0px 20px;
-width: 10em;
+  width: 10em;
   border: 1px solid #012880;
   background-image: linear-gradient(-180deg, #ff8989 0%, #c01f1f 100%);
 }
@@ -194,7 +194,7 @@ width: 10em;
   position: fixed;
   width: 30px;
   height: 30px;
-  margin-top: 5px ;
+  margin-top: 5px;
   align-items: center;
-  padding-left:10px : ;
+  padding-left: 5px;
 }
