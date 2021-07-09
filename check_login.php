@@ -3,7 +3,7 @@ session_start();
 require('./Table/config.php');
 
 
-if (!($_SESSION["Login"] == "YES" || $_SESSION["Login"] == "NO")) {         // true kokhon hobe?
+if (!($_SESSION["Login"] == "YES" || $_SESSION["Login"] == "NO")) {         // true kokhon hobe? jokhon XXX asbe, login page e dek
 
       $myusername = $_POST["username"];
       $mypassword = $_POST["password"];
