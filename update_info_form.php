@@ -36,7 +36,6 @@ if ($_SESSION["Login"] != "YES")
 							<td class="level" align="center"><strong>Level</strong></td>
 							<td align="center">&nbsp;</td>
 						</tr>
-
 						<tr>
 							<td align="center"><input name="id" type="hidden" id="id" value="<?php echo $rows['id']; ?>"></td>
 							<td align="center"><input name="username" type="text" id="username" size="50" value="<?php echo $rows['username']; ?>"></td>

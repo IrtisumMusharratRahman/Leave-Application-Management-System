@@ -1,7 +1,7 @@
 body{
     margin:60px;
     padding: 0px;
-    background-color: rgb(4, 82, 82);
+    background-color: rgb(2, 2, 82);
     overflow: hidden;
     font-family: system-ui;
 }	
@@ -17,6 +17,7 @@ font-family: arial, sans-serif;
 border-collapse: collapse;
 width: 100%;
 border: 2rem;
+background-color:#1b203d;
 
 }
 
