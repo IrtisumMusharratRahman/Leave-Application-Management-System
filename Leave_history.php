@@ -77,6 +77,8 @@ if ($_SESSION["Login"] != "YES") //if the user is not logged in or has been logg
 				}
 			} else {
 				echo '<script>alert("No records found")</script>';
+				
+				
 			}
 
 			mysqli_close($conn);

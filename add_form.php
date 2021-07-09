@@ -21,15 +21,19 @@ if ($_SESSION["LEVEL"] == 3) {
 
 	require("./Table/config.php");
 
-	$sql = "INSERT INTO form(id, name, Sdate, Edate, days, reason, status) VALUES ('$id','$name','$Sdate','$Edate','$days', '$reason', '$status' )";
+	$sql = "INSERT INTO New_form(id, name, Sdate, Edate, days, reason, status) VALUES ('$id','$name','$Sdate','$Edate','$days', '$reason', '$status' )";
 
 	if (mysqli_query($conn, $sql)) {
-		echo "<h3>New record created successfully</h3>";
+	
+		echo '<script>
+			alert("New record created successfully");
+			window.location.href="check_login.php";
+			</script>';
 	} else {
 		echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 	}
 
 
 	mysqli_close($conn);
-	echo "<p> <a href= 'staff_main.php'> Go back to main page</a> </p>";
+
 }
