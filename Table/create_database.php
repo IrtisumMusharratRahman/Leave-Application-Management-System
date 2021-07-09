@@ -21,7 +21,7 @@ if (mysqli_query($conn, $sql)) {
 }
 
 //And finally we close the connection to the MySQL server
-mysqli_close($conn);
+
 ?>
 
  

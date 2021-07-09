@@ -2,8 +2,12 @@
 require('./Table/create_database.php');
 require('./Table/create_user_table.php');
 require('./Table/create_form_table.php');
+require('./Table/Table_New_Application.php');
 require('./Table/insert_data_user.php');
 require('./Table/insert_data_form.php');
+require('./Table/insert_New_app_form.php');
+
+
 ?>
 
 <html>

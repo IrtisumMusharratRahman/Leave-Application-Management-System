@@ -3,7 +3,7 @@
 require_once ("config.php");
 
 
-$sql = "CREATE TABLE New_form(
+$sql = "CREATE TABLE NewApplication(
 		id VARCHAR(15),
  		name VARCHAR(50),
 		Sdate VARCHAR(15),
@@ -18,5 +18,5 @@ if (mysqli_query($conn, $sql)) {
   echo "Error creating table: " . mysqli_error($conn);
 }
 
-//mysqli_close($conn);
+
 ?>
