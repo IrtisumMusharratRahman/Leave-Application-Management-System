@@ -74,21 +74,21 @@ require("./Table/config.php");
 
     <tr>
         <td> Staff Full Name : </td>
-        <td> <input type="text" name="name" size="30" /> </td>
+        <td> <input type="text" name="name" size="30" value="" /> </td>
     </tr>
 
 
     <tr>
         <td> Start Date: </td>
         <td>
-            <input type="date" class="textbox" id="start" name="start_date" onchange="cal()" />
+            <input type="date" class="textbox" id="start" name="start_date" value="" onchange="cal()" />
         </td>
     </tr>
 
     <tr>
         <td> End Date: </td>
         <td>
-            <input type="date" class="textbox" id="end" name="end_date" onchange="cal()" />
+            <input type="date" class="textbox" id="end" name="end_date" value="" onchange="cal()" />
         </td>
     </tr>
 
@@ -96,14 +96,14 @@ require("./Table/config.php");
     <tr>
         <td> Number of days: </td>
         <td>
-            <input type="text" class="textbox" id="numdays2" name="numdays" />
+            <input type="text" class="textbox" id="numdays2" name="numdays" value="" />
         </td>
     </tr>
 
 
     <tr>
         <td> Reason: </td>
-        <td> <textarea name="reason" rows="8" cols="50"></textarea> </td>
+        <td> <textarea name="reason" rows="8" cols="50" value=""></textarea> </td>
     </tr>
     <tr>
         <td></td>

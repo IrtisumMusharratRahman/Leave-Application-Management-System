@@ -12,19 +12,31 @@ function cal() {
 
 function validateForm() {
     if (document.forms["leave_form"]["name"].value == "") {
+        document.forms["leave_form"]["name"].style.background = 'red';
         alert("Please Enter Your Full Name!!!");
         return false;
+    } else {
+        document.forms["leave_form"]["name"].style.background = 'white';
     }
     if (document.forms["leave_form"]["start_date"].value == "") {
+        document.forms["leave_form"]["start_date"].style.background = 'red';
         alert("Please Enter Leave Starting Date!!!");
         return false;
+    } else {
+        document.forms["leave_form"]["start_date"].style.background = 'white';
     }
     if (document.forms["leave_form"]["end_date"].value == "") {
+        document.forms["leave_form"]["end_date"].style.background = 'red';
         alert("Please Enter Leave Ending Date!!!");
         return false;
+    } else {
+        document.forms["leave_form"]["end_date"].style.background = 'white';
     }
     if (document.forms["leave_form"]["reason"].value == "") {
+        document.forms["leave_form"]["reason"].style.background = 'red';
         alert("Please Enter Reason For Your Leave!!!");
         return false;
+    } else {
+        document.forms["leave_form"]["reason"].style.background = 'white';
     }
 }
