@@ -11,7 +11,7 @@ if ($_SESSION["Login"] != "YES") //if the user is not logged in or has been logg
 <head>
 	<title>Subject List</title>
 
-	<head>
+</head>
 
 	<body>
 
@@ -52,7 +52,7 @@ if ($_SESSION["Login"] != "YES") //if the user is not logged in or has been logg
 
 
 
-			</table>
+			
 
 	<?php
 				}
@@ -63,8 +63,10 @@ if ($_SESSION["Login"] != "YES") //if the user is not logged in or has been logg
 			mysqli_close($conn);
 	?>
 
+	</table>
 
+		<button onclick="window.location.href='search_form.php';">Previous Page</button>
 
-	<br /><br /><a href="search_form.php">Search subjects offered</a>
-	
-	<br /><br /><a href="logout.php">LOGOUT</a>
+		<button onclick="window.location.href='check_login.php';">Main Page</button>
+	</body>
+</html>
