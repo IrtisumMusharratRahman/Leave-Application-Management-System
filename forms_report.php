@@ -30,11 +30,11 @@ if ($_SESSION["LEVEL"] == 2) {
 				<table width="600" border="1" cellspacing="0" cellpadding="3">
 
 					<tr>
-						<td align="center"><strong>Name</strong></td>
-						<td align="center"><strong>ID</strong></td>
-						<td align="center"><strong>Days</strong></td>
-						<td align="center"><strong>Reason</strong></td>
-						<td align="center"><strong>Status</strong></td>
+						<th align="center"><strong>Name</strong></th>
+						<th align="center"><strong>ID</strong></th>
+						<th align="center"><strong>Days</strong></th>
+						<th align="center"><strong>Reason</strong></th>
+						<th align="center"><strong>Status</strong></th>
 					</tr>
 
 					<?php
