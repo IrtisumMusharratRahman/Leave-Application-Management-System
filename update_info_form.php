@@ -21,7 +21,7 @@ if ($_SESSION["Login"] != "YES")
 				<br>
 				<?php
 				$ID = $_SESSION["id"];
-				require("config.php");
+				require("./Table/config.php");
 				$sql = "SELECT * FROM user WHERE id='$ID'";
 				$result = mysqli_query($conn, $sql);
 				$rows = mysqli_fetch_assoc($result);
@@ -30,13 +30,12 @@ if ($_SESSION["Login"] != "YES")
 					<table class="center" border="0" cellspacing="5" cellpadding="0">
 
 						<tr>
-							<td align="center">&nbsp;</td>
-							<td class="Username" align="center"><strong>Username</strong></td>
-							<td class="password" align="center"><strong>Password</strong></td>
-							<td class="level" align="center"><strong>Level</strong></td>
-							<td align="center">&nbsp;</td>
+							<th align="center">&nbsp;</td>
+							<th class="Username" align="center"><strong>Username</strong></th>
+							<th class="password" align="center"><strong>Password</strong></th>
+							<th class="level" align="center"><strong>Level</strong></th>
+							<th align="center">&nbsp;</td>
 						</tr>
-
 						<tr>
 							<td align="center"><input name="id" type="hidden" id="id" value="<?php echo $rows['id']; ?>"></td>
 							<td align="center"><input name="username" type="text" id="username" size="50" value="<?php echo $rows['username']; ?>"></td>
