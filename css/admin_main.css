@@ -18,7 +18,7 @@ body{
 
 .sidenav {
   height: 100%;
-  width: 300px;
+  width: 310px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -50,6 +50,7 @@ body{
   transition: margin-left .5s;
   padding: 16px;
   margin-left: 300px;
+
 }
 .head{
 	padding:20px;
