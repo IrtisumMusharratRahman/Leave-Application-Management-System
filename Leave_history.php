@@ -21,63 +21,61 @@ if ($_SESSION["Login"] != "YES") //if the user is not logged in or has been logg
 		$find = $_SESSION['id'];
 		$sql = "SELECT * FROM form WHERE id LIKE '%$find%'";
 		$result = mysqli_query($conn, $sql);
-		$count = mysqli_query($conn, $sql);
-		$_i="1";
-		if (mysqli_num_rows($count) > 0) {
-			$rows['name'];
-			$_i=$_i+1;
-		}
 
 		if (mysqli_num_rows($result) > 0) {
 
 			?>
 
-		
-
-	
-
 	    <h3>Your leave details:</h3> 
 		
 	
 			<!-- Start table -->
-			
+			<table >
+				<tr>
+					<td> Staff Username : </td>
+					<td> <?php echo $_SESSION["USER"]   ?> </td>
+				</tr>
+
+
+				<tr>
+					<td> Staff ID : </td>
+					<td> <?php echo $_SESSION["id"]   ?> </td>
+				</tr>
+			</table>
+
+
 			<table width="600" border="1" cellspacing="0" cellpadding="3">
 
 				<!-- Print table heading -->
 				<tr>
-					<th align="center" rowspan="<?php echo $_i ?>" ><strong>Name</strong></th>
-					<th  align="center"><strong>ID</strong></th>
+					
 					<th  align="center"><strong>Start Date</strong></th>
 					<th  align="center"><strong>End Date</strong></th>
 					<th  align="center"><strong>Number of Days</strong></th>
 					<th  align="center"><strong>Reason</strong></th>
 					<th  align="center"><strong>Status</strong></th>
 				</tr>
+				
 
 
 				<?php
 				// output data of each row
 				while ($rows = mysqli_fetch_assoc($result)) {
+					
 				?>
 					<tr>
-						<td><?php echo $rows['name']; ?></td>
-						<td><?php echo $rows['id']; ?></td>
+						
 						<td><?php echo $rows['Sdate']; ?></td>
 						<td><?php echo $rows['Edate']; ?></td>
 						<td><?php echo $rows['days']; ?></td>
 						<td><?php echo $rows['reason']; ?></td>
 						<td><?php echo $rows['status']; ?></td>
-					</tr>
-
-
-
-			
+					</tr>	
 
 	<?php
 				}
 			} else {
 				echo '<script>alert("No records found")</script>';
-				
 				
 			}
 
