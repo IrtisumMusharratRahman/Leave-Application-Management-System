@@ -135,7 +135,7 @@ require("./Table/config.php");
 
     <tr>
         <td> Reason: </td>
-        <td> <textarea name="reason" rows="8" cols="80"></textarea> </td>
+        <td> <textarea name="reason" rows="8" cols="50"></textarea> </td>
     </tr>
     <tr>
         <td></td>
