@@ -121,7 +121,7 @@ body {
   
   .content {
     margin-left: 250px;
-    background: #051d66;
+    background: #021038;
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -173,7 +173,7 @@ body {
   h2
   {
     text-align: center;
-    color: #7c795d; 
+    color: #ffffff; 
     font-family: 'Trocchi', serif; 
     font-size: 45px; 
     font-weight: normal; 
@@ -200,4 +200,5 @@ body {
     column-width: 200px;
     font-family: "Times New Roman", Times, serif;
     font-size: 25px;
+    padding: 7px;
   }

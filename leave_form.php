@@ -89,7 +89,7 @@ require("./Table/config.php");
 <form name="leave_form" action="add_form.php" method="post" onsubmit="return validateForm()">
 
 
-<h2><u> Application Form </u></h2>
+<h2>Application Form </h2>
 
 <table>
 
