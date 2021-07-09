@@ -1,137 +1,123 @@
-body
-{
-    background: linear-gradient(to right, #7b4397, #dc2430);
+body {
+  background: linear-gradient(to right, #7b4397, #dc2430);
 }
-h1
-{
-    font-family: Georgia, sans-serif;
-    font-size: 3em;
-    letter-spacing: -2px;
-    text-align: center;
-    background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
-    border-radius: 32px;
-    color: rgb(255, 255, 255);
-    text-shadow: 2px 2px 4px #000000;
-  
+h1 {
+  font-family: Georgia, sans-serif;
+  font-size: 3em;
+  letter-spacing: -2px;
+  text-align: center;
+  background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+  border-radius: 32px;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 4px #000000;
 }
 
 .center {
-    margin-left: auto;
-    margin-right: auto;
-    
-  }
-
-.username
-{
-    font-family: Georgia, sans-serif;
-    font-size: 20px;
-    background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
-    border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.username:hover
-{
-    background: yellowgreen;
+.username {
+  font-family: Georgia, sans-serif;
+  font-size: 20px;
+  background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+  border-radius: 5px;
 }
 
-#username
-{
-    font-family: Georgia, sans-serif;
-    font-size: 20px;   
-    background:linear-gradient(to left, #E0EAFC 0%, #CFDEF3 100%);
-}
-#username:hover
-{
-    background: rgb(49, 46, 228);
+.username:hover {
+  background: yellowgreen;
 }
 
-.password
-{
-    font-family: Georgia, sans-serif;
-    font-size: 20px;
-    background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
-    border-radius: 5px;
+#username {
+  font-family: Georgia, sans-serif;
+  font-size: 20px;
+  background: linear-gradient(to left, #e0eafc 0%, #cfdef3 100%);
 }
-.password:hover
-{
-    background: yellowgreen;
+#username:hover {
+  background: rgb(49, 46, 228);
 }
 
-#password
-{
-    font-family: Georgia, sans-serif;
-    font-size: 20px;   
-    background:linear-gradient(to left, #E0EAFC 0%, #CFDEF3 100%);
+.password {
+  font-family: Georgia, sans-serif;
+  font-size: 20px;
+  background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+  border-radius: 5px;
 }
-#password:hover
-{
-    background: rgb(49, 46, 228);
-}
-
-.level
-{
-    font-family: Georgia, sans-serif;
-    font-size: 20px;
-    background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
-    border-radius: 5px;
-}
-.level:hover
-{
-    background: yellowgreen;
+.password:hover {
+  background: yellowgreen;
 }
 
-#level
-{
-    font-family: Georgia, sans-serif;
-    font-size: 20px;   
-    background:linear-gradient(to left, #E0EAFC 0%, #CFDEF3 100%);
+#password {
+  font-family: Georgia, sans-serif;
+  font-size: 20px;
+  background: linear-gradient(to left, #e0eafc 0%, #cfdef3 100%);
 }
-#level:hover
-{
-    background: rgb(49, 46, 228);
+#password:hover {
+  background: rgb(49, 46, 228);
 }
 
-#update
-{  
-    background: #2E94E3;
-    color: #fff;
-    border: none;
-    width: 120px;
-    height: 40px;
-    font-size: 15px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-    transition-property: background;
-    
+.level {
+  font-family: Georgia, sans-serif;
+  font-size: 20px;
+  background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+  border-radius: 5px;
 }
-#update:hover
-{
-    background:green;
+.level:hover {
+  background: yellowgreen;
 }
 
-#p_page
-{ 
-    background: #2E94E3;
-    color: #fff;
-    border: none;
-    width: 120px;
-    height: 40px;
-    font-size: 15px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-    transition-property: background;
-    margin-left: 700px;
-    
+#level {
+  font-family: Georgia, sans-serif;
+  font-size: 20px;
+  background: linear-gradient(to left, #e0eafc 0%, #cfdef3 100%);
 }
-#p_page:hover
-{
-    background:green;
+#level:hover {
+  background: rgb(49, 46, 228);
+}
+
+#update {
+  background: #2e94e3;
+  color: #fff;
+  border: none;
+  width: 120px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  transition-property: background;
+}
+#update:hover {
+  background: green;
+}
+
+#p_page {
+  color: #fff;
+  border: none;
+  width: 120px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  transition-property: background;
+  margin-left: 700px;
+
+  border-radius: 3.75rem;
+  line-height: 2.5rem;
+  font-size: 1rem;
+  padding: 0px 20px 0px 20px;
+  width: 15em;
+  border: 1px solid #012880;
+  background-image: linear-gradient(-180deg, #ff8989 0%, #c01f1f 100%);
+}
+
+#p_page:hover {
+  background-image: linear-gradient(-180deg, #8b89ff 0%, #421fc0 100%);
 }

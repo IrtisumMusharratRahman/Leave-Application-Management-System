@@ -45,6 +45,8 @@ if ($_SESSION["Login"] != "YES")
 							<td align="center"><input type="submit" id="update" name="Submit" value="Update"></td>
 						</tr>
 
+					</table>
+
 
 
 			<button id="p_page" onclick="window.location.href='check_login.php';">Previous Page</button>
