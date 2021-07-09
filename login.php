@@ -12,6 +12,7 @@ $_SESSION["Login"] = "XXX";
 <head>
 	<title>Login Page</title>
 	<link rel="stylesheet" href="./css/style_login.css">
+	<script src="./Js/login.js"></script>
 </head>
 
 <body>
@@ -25,19 +26,6 @@ $_SESSION["Login"] = "XXX";
 		<br />
 		<p><input type="submit" class="btn" value="Login" /></p>
 	</form>
-
-	<script>
-		function validateLoginForm() {
-			if (document.forms["login_form"]["username"].value == "") {
-				alert("Please Enter Your User Name!!!");
-				return false;
-			}
-			if (document.forms["login_form"]["password"].value == "") {
-				alert("Please Enter Your Password!!!");
-				return false;
-			}
-		}
-	</script>
 
 </body>
 
