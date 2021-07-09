@@ -9,17 +9,16 @@ if ($_SESSION["Login"] != "YES") //if the user is not logged in or has been logg
 <html>
 
 <head>
-	<title>Leave Applications Reoprt</title>
-	<link rel="stylesheet" href="./css/table_report.css" type="text/css"/>
+	<title>Viewing Student Data</title>
 
 	<head>
 
 	<body>
 
-		<h1>Leave Applications Reoprt </h1>
+		<h1>View Student Details </h1>
 
 		<?php
-		require("./Table/config.php");
+		require("config.php");
 
 		$sql = "SELECT * FROM form ORDER BY name";
 		$result = mysqli_query($conn, $sql);
@@ -29,18 +28,19 @@ if ($_SESSION["Login"] != "YES") //if the user is not logged in or has been logg
 			<table width="600" border="1" cellspacing="0" cellpadding="3">
 
 				<tr>
-					<th align="center"><strong>Name</strong></th>
-					<th  align="center"><strong>ID</strong></th>
-					<th  align="center"><strong>Start Date</strong></th>
-					<th  align="center"><strong>End Date</strong></th>
-					<th  align="center"><strong>Number of Days</strong></th>
-					<th  align="center"><strong>Reason</strong></th>
-					<th  align="center"><strong>Status</strong></th>
+					<td align="center"><strong>Name</strong></td>
+					<td align="center"><strong>ID</strong></td>
+					<td align="center"><strong>Start Date</strong></td>
+					<td align="center"><strong>End Date</strong></td>
+					<td align="center"><strong>Number of Days</strong></td>
+					<td align="center"><strong>Reason</strong></td>
+					<td align="center"><strong>Status</strong></td>
 				</tr>
 
 				<?php
 				while ($rows = mysqli_fetch_assoc($result)) {
 				?>
+
 					<tr>
 						<td><?php echo $rows['name']; ?></td>
 						<td><?php echo $rows['id']; ?></td>
@@ -52,6 +52,8 @@ if ($_SESSION["Login"] != "YES") //if the user is not logged in or has been logg
 					</tr>
 
 				<?php }
+
+
 				mysqli_close($conn);
 				?>
 
@@ -62,9 +64,6 @@ if ($_SESSION["Login"] != "YES") //if the user is not logged in or has been logg
 
 
 		?>
-
-		<br>
-		<br>
 		<button onclick="window.location.href='check_login.php';">Previous Page</button>
 	</body>
 

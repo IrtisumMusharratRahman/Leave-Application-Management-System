@@ -1,7 +1,7 @@
 body{
 	margin:0px;
 	padding: 0px;
-  background-color: rgb(4, 82, 82);
+    background-color: rgb(4, 82, 82);
 	overflow: hidden;
 	font-family: system-ui;
 }
@@ -68,7 +68,7 @@ body{
 	width: 40px;
 	margin-top: 5px;
 }
-.profile p {
+.profile p{
 	color: white;
 	font-weight: 500;
 	margin-left: 55px;

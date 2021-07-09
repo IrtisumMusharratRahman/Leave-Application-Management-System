@@ -1,9 +1,9 @@
 <?php
-require('./Table/create_database.php');
-require('./Table/create_user_table.php');
-require('./Table/create_form_table.php');
-require('./Table/insert_data_user.php');
-require('./Table/insert_data_form.php');
+require('create_database.php');
+require('create_user_table.php');
+require('create_form_table.php');
+require('insert_data_user.php');
+require('insert_data_form.php');
 ?>
 
 <html>

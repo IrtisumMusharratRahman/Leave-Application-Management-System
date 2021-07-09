@@ -14,14 +14,13 @@ if ($_SESSION["LEVEL"] == 2) {
 		<title>Viewing Student Data</title>
 
 		<head>
-		<link rel="stylesheet" href="./css/table_report.css" type="text/css"/>
 
 		<body>
 
-			<h1>All New Applications</h1>
+			<h1>View Student Details</h1>
 
 			<?php
-			require("./Table/config.php");
+			require("config.php");
 
 			$sql = "SELECT * FROM form where status='New Application'";
 			$result = mysqli_query($conn, $sql);
@@ -31,11 +30,11 @@ if ($_SESSION["LEVEL"] == 2) {
 				<table width="600" border="1" cellspacing="0" cellpadding="3">
 
 					<tr>
-						<th align="center"><strong>Name</strong></th>
-						<th align="center"><strong>ID</strong></th>
-						<th align="center"><strong>Days</strong></th>
-						<th align="center"><strong>Reason</strong></th>
-						<th align="center"><strong>Status</strong></th>
+						<td align="center"><strong>Name</strong></td>
+						<td align="center"><strong>ID</strong></td>
+						<td align="center"><strong>Days</strong></td>
+						<td align="center"><strong>Reason</strong></td>
+						<td align="center"><strong>Status</strong></td>
 					</tr>
 
 					<?php

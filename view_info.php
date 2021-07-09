@@ -20,7 +20,7 @@ if ($_SESSION["LEVEL"] == 1) {
 			<h1>Staff Details</h1>
 
 			<?php
-			require("./Table/config.php");
+			require("config.php");
 
 			$sql = "SELECT * FROM user";
 			$result = mysqli_query($conn, $sql);

@@ -1,6 +1,6 @@
 <?php
 session_start();
-require ("./Table/config.php");
+require ("config.php");
 
 if ($_SESSION["Login"] != "YES")
 header("Location: login.php");

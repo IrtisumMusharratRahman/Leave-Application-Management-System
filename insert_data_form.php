@@ -3,47 +3,17 @@
 require ("config.php");
 
 $sql = "INSERT INTO form (id, name,Sdate, Edate, days, reason, status)
-VALUES ('1003', 'Bobby','2018-03-15','2018-03-16', 2, 'Hospital', 'Approved');";
+VALUES ('2001', 'Ahmed','2020-03-15','2020-03-16', 2, 'Hospital', 'Approved');";
 $sql .= "INSERT INTO form (id, name,Sdate, Edate, days, reason, status)
-VALUES ('1003', 'Bobby','2019-03-15','2019-03-19', 5, 'Tired', 'Approved');";
+VALUES ('2002', 'Sara','2020-03-15','2020-03-19', 5, 'Tired', 'New Application');";
 $sql .= "INSERT INTO form (id, name,Sdate, Edate, days, reason, status)
-VALUES ('1004', 'Beth','2018-07-15','2018-07-17', 3, 'Travel', 'Rejected');";
+VALUES ('2003', 'Tom','2020-03-15','2020-03-17', 3, 'Travel', 'Rejected');";
 $sql .= "INSERT INTO form (id, name,Sdate, Edate, days, reason, status)
-VALUES ('1006', 'Cindy','2018-04-15','2018-04-16', 2, 'Hospital', 'Approved');";
+VALUES ('2004', 'Chom','2020-03-15','2020-03-16', 2, 'Hospital', 'Rejected');";
 $sql .= "INSERT INTO form (id, name,Sdate, Edate, days, reason, status)
-VALUES ('1005', 'Chad','2018-05-15','2018-05-17', 3, 'Tired', 'Approved');";
+VALUES ('2005', 'Lio','2020-03-15','2020-03-17', 3, 'Tired', 'New Application');";
 $sql .= "INSERT INTO form (id, name,Sdate, Edate, days, reason, status)
-VALUES ('1004', 'Beth','2019-01-15','2019-01-16', 2, 'Hospital', 'Approved');";
-$sql .= "INSERT INTO form (id, name,Sdate, Edate, days, reason, status)
-VALUES ('1005', 'Chad','2019-03-15','2019-03-17', 3, 'Travel', 'Approved');";
-$sql .= "INSERT INTO form (id, name,Sdate, Edate, days, reason, status)
-VALUES ('1006', 'Cindy','2019-03-15','2019-03-16', 2, 'Hospital', 'Approved');";
-$sql .= "INSERT INTO form (id, name,Sdate, Edate, days, reason, status)
-VALUES ('1005', 'Chad','2019-06-15','2019-06-17', 3, 'Tired', 'Rejected');";
-$sql .= "INSERT INTO form (id, name,Sdate, Edate, days, reason, status)
-VALUES ('1006', 'Cindy','2019-04-15','2019-04-16', 2, 'Hospital', 'Approved');";
-$sql .= "INSERT INTO form (id, name,Sdate, Edate, days, reason, status)
-VALUES ('1005', 'Chad','2019-07-15','2019-07-17', 3, 'Travel', 'Approved');";
-$sql .= "INSERT INTO form (id, name,Sdate, Edate, days, reason, status)
-VALUES ('1004', 'Beth','2019-02-15','2019-02-16', 2, 'Hospital', 'Approved');";
-$sql .= "INSERT INTO form (id, name,Sdate, Edate, days, reason, status)
-VALUES ('1005', 'Chad','2019-09-15','2019-09-17', 3, 'Tired', 'Rejected');";
-$sql .= "INSERT INTO form (id, name,Sdate, Edate, days, reason, status)
-VALUES ('1006', 'Cindy','2019-06-15','2019-06-16', 2, 'Hospital', 'Approved');";
-$sql .= "INSERT INTO form (id, name,Sdate, Edate, days, reason, status)
-VALUES ('1005', 'Chad','2019-11-15','2019-11-17', 3, 'Travel', 'Approved');";
-$sql .= "INSERT INTO form (id, name,Sdate, Edate, days, reason, status)
-VALUES ('1006', 'Cindy','2019-07-15','2019-07-16', 2, 'Hospital', 'Approved');";
-$sql .= "INSERT INTO form (id, name,Sdate, Edate, days, reason, status)
-VALUES ('1005', 'Chad','2020-01-15','2020-01-17', 3, 'Tired', 'Rejected');";
-$sql .= "INSERT INTO form (id, name,Sdate, Edate, days, reason, status)
-VALUES ('1006', 'Cindy','2020-02-15','2020-02-19', 5, 'Travel', 'Approved');";
-$sql .= "INSERT INTO form (id, name,Sdate, Edate, days, reason, status)
-VALUES ('1004', 'Beth','2021-09-15','2021-09-16', 2, 'Hospital', 'New Application');";
-$sql .= "INSERT INTO form (id, name,Sdate, Edate, days, reason, status)
-VALUES ('1005', 'Chad','2021-09-15','2021-09-17', 3, 'Travel', 'New Application');";
-$sql .= "INSERT INTO form (id, name,Sdate, Edate, days, reason, status)
-VALUES ('1006', 'Cindy','2021-08-15','2021-08-19', 5, 'Travel', 'New Application')";
+VALUES ('2006', 'Afrad','2020-03-15','2020-03-19', 5, 'Travel', 'Approved')";
 
 if (mysqli_multi_query($conn, $sql)) {
   echo "<h3>New records created successfully</h3>";
