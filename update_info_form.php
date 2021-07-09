@@ -17,7 +17,8 @@ if ($_SESSION["Login"] != "YES")
 	<body>
 
 				<h1>Update User Data Form</h1>
-
+				<br>
+				<br>
 				<?php
 				$ID = $_SESSION["id"];
 				require("config.php");
@@ -25,8 +26,6 @@ if ($_SESSION["Login"] != "YES")
 				$result = mysqli_query($conn, $sql);
 				$rows = mysqli_fetch_assoc($result);
 				?>
-
-
 				<form name="form1" method="post" action="update_info.php">
 					<table class="center" border="0" cellspacing="5" cellpadding="0">
 
@@ -47,11 +46,10 @@ if ($_SESSION["Login"] != "YES")
 						</tr>
 
 					</table>
-
-
-
+					<br>
+					<br>
+					<br>
 			<button id="p_page" onclick="window.location.href='check_login.php';">Previous Page</button>
-
 	</body>
 
 </html>
