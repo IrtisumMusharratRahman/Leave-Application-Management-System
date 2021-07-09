@@ -168,13 +168,14 @@ label #sidebar_btn:hover {
   background-color: #486ada;
   transition: background-color 1s;
   font-weight: bold;
+  border-radius: 3.75rem;
 }
 
 .nature > button:hover {
   padding: 5px;
   color: #acc0ff;
   background-color: #22242a;
-  transition: background-color 2s;
+  transition: background-color 1s;
 }
 
 .right_area > button {
