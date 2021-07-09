@@ -9,14 +9,16 @@ if ($_SESSION["Login"] != "YES")
 
 <head>
 	<title>Updating User Data</title>
-	<link rel="stylesheet" href="./css/update_info_form.css">
+	<!-- <link rel="stylesheet" href="./css/update_info_form.css"> -->
+	<link rel="stylesheet" href="./css/table_report.css" type="text/css"/>
 
 </head>
 
 	<body>
 
 				<h1>Update User Data Form</h1>
-
+				<br>
+				<br>
 				<?php
 				$ID = $_SESSION["id"];
 				require("./Table/config.php");
@@ -24,19 +26,16 @@ if ($_SESSION["Login"] != "YES")
 				$result = mysqli_query($conn, $sql);
 				$rows = mysqli_fetch_assoc($result);
 				?>
-
-
 				<form name="form1" method="post" action="update_info.php">
 					<table class="center" border="0" cellspacing="5" cellpadding="0">
 
 						<tr>
-							<td align="center">&nbsp;</td>
-							<td class="Username" align="center"><strong>Username</strong></td>
-							<td class="password" align="center"><strong>Password</strong></td>
-							<td class="level" align="center"><strong>Level</strong></td>
-							<td align="center">&nbsp;</td>
+							<th align="center">&nbsp;</td>
+							<th class="Username" align="center"><strong>Username</strong></th>
+							<th class="password" align="center"><strong>Password</strong></th>
+							<th class="level" align="center"><strong>Level</strong></th>
+							<th align="center">&nbsp;</td>
 						</tr>
-
 						<tr>
 							<td align="center"><input name="id" type="hidden" id="id" value="<?php echo $rows['id']; ?>"></td>
 							<td align="center"><input name="username" type="text" id="username" size="50" value="<?php echo $rows['username']; ?>"></td>
@@ -46,11 +45,10 @@ if ($_SESSION["Login"] != "YES")
 						</tr>
 
 					</table>
-
-
-
+					<br>
+					<br>
+					<br>
 			<button id="p_page" onclick="window.location.href='check_login.php';">Previous Page</button>
-
 	</body>
 
 </html>
