@@ -60,7 +60,6 @@ body{
 	float: left;
 }
 .profile{
-	display: inline-block;
 	float: right;
 	width: 160px;
 }
