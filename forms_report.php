@@ -14,10 +14,11 @@ if ($_SESSION["LEVEL"] == 2) {
 		<title>Viewing Student Data</title>
 
 		<head>
+		<link rel="stylesheet" href="./css/table_report.css" type="text/css"/>
 
 		<body>
 
-			<h1>View Student Details</h1>
+			<h1>All New Applications</h1>
 
 			<?php
 			require("config.php");
