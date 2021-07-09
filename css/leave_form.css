@@ -178,7 +178,7 @@ body {
     font-size: 45px; 
     font-weight: normal; 
     line-height: 48px; 
-    margin: 0;
+    
   }
   .button1
   {
@@ -187,10 +187,17 @@ body {
     font-size: 16px;
     border-radius: 12px;
     transition-duration: 0.4s;
-    
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   }
 
   
   .button1:hover {
-    background-color: #19b3d3;/* Green */
+    background-color: #19b3d3;
+  }
+
+  table td
+  {
+    column-width: 200px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 25px;
   }
