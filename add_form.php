@@ -21,7 +21,7 @@ if ($_SESSION["LEVEL"] == 3) {
 
 	require("./Table/config.php");
 
-	$sql = "INSERT INTO New_form(id, name, Sdate, Edate, days, reason, status) VALUES ('$id','$name','$Sdate','$Edate','$days', '$reason', '$status' )";
+	$sql = "INSERT INTO NewApplication(id, name, Sdate, Edate, days, reason, status) VALUES ('$id','$name','$Sdate','$Edate','$days', '$reason', '$status' )";
 
 	if (mysqli_query($conn, $sql)) {
 	
