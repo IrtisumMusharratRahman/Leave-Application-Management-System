@@ -9,7 +9,7 @@ if ($_SESSION["Login"] != "YES") //if the user is not logged in or has been logg
 <html>
 
 <head>
-	<title>Search</title>
+	<title>Subject List</title>
 
 </head>
 
@@ -17,18 +17,24 @@ if ($_SESSION["Login"] != "YES") //if the user is not logged in or has been logg
 
 		<?php
 		require("./Table/config.php");
+		if(isset($_POST['staffID']))
 		$find = $_POST['staffID'];
+		else
+		$find = $_SESSION['id'];
 		$sql = "SELECT * FROM form WHERE id LIKE '%$find%'";
 		$result = mysqli_query($conn, $sql);
 
 		if (mysqli_num_rows($result) > 0) {
 
-			?>
+			if(isset($_POST['staffID'])) {?>
 
 		<h3>Your search result:</h3> 
 
+		<?php } else {?>
+
+	    <h3>Your leave details:</h3> 
 		
-	
+		<?php } ?>
 			<!-- Start table -->
 			
 			<table width="600" border="1" cellspacing="0" cellpadding="3">
@@ -61,6 +67,8 @@ if ($_SESSION["Login"] != "YES") //if the user is not logged in or has been logg
 
 
 
+			
+
 	<?php
 				}
 			} else {
@@ -72,10 +80,15 @@ if ($_SESSION["Login"] != "YES") //if the user is not logged in or has been logg
 
 	</table>
 
+		<?php   
+	if(isset($_POST['staffID'])){
+	?>
+		echo "<button onclick="window.location.href='search_form.php';">Previous Page</button>"
 	
-		<button onclick="window.location.href='search_form.php';">Previous Page</button>
-	
-	
+	<?php   
+	}
+	?>
+
 
 		<button onclick="window.location.href='check_login.php';">Main Page</button>
 	</body>
