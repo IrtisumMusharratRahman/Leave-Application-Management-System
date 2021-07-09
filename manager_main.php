@@ -12,7 +12,7 @@
 	
   <div id="mySidenav" class="sidenav">
   <p class="level">Manager</p>
-  <a href="#" class="icon-a"><i class="fa fa-dashboard icons"></i> &nbsp;&nbsp;Dashboard</a>
+  <a href="check_login.php" class="icon-a"><i class="fa fa-dashboard icons"></i> &nbsp;&nbsp;Dashboard</a>
   <a href="update_info_form.php"class="icon-a"><i class="fa fa-user icons"></i> &nbsp;&nbsp;Edit Profile</a>
   <a href="forms_report.php" class="icon-a"><i class="fa fa-edit"></i> &nbsp;&nbsp; View Aspplications</a>
   <a href="report.php"class="icon-a"><i class="fa fa-file"></i> &nbsp;&nbsp; View Report</a>
@@ -116,7 +116,7 @@
 				<div class="col-div-4">
 				<div class="box-4">
 					<div class="content-box">
-						<p>Total Sales <span>Sell All</span></p>
+						<p>Total Sales <span>See All</span></p>
 					</div>
 					<div class="col-div-3">
 						<div class="box">

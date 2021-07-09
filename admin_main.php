@@ -12,7 +12,7 @@
 	
   <div id="mySidenav" class="sidenav">
   <p class="level">Admin</p>
-  <a href="admin_main.php" class="icon-a"><i class="fa fa-dashboard icons"></i> &nbsp;&nbsp;Dashboard</a>
+  <a href="check_login.php" class="icon-a"><i class="fa fa-dashboard icons"></i> &nbsp;&nbsp;Dashboard</a>
   <a href="User_form.php"class="icon-a"><i class="fa fa-users icons"></i> &nbsp;&nbsp;Add new user</a>
   <a href="view_info.php"class="icon-a"><i class="fa fa-list icons"></i> &nbsp;&nbsp;Edit/Delete User </a>
   <a href="report.php"class="icon-a"><i class="fa fa-file"></i> &nbsp;&nbsp;Leave Applications Report</a>
