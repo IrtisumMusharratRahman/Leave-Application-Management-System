@@ -178,24 +178,4 @@ label #sidebar_btn:hover {
   transition: background-color 1s;
 }
 
-.right_area > button {
-  cursor: pointer;
-  position: relative;
 
-  border-radius: 3.75rem;
-  line-height: 2.5rem;
-  font-size: 1rem;
-  padding: 0px 20px 0px 20px;
-  width: 10em;
-  border: 1px solid #012880;
-  background-image: linear-gradient(-180deg, #ff8989 0%, #c01f1f 100%);
-}
-
-.right_area > button > img {
-  position: fixed;
-  width: 30px;
-  height: 30px;
-  margin-top: 5px;
-  align-items: center;
-  padding-left: 5px;
-}
