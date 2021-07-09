@@ -34,7 +34,7 @@
     <a href="update_info_form.php"><i class="fas fa-user"></i><span>Edit Profile</span></a>
     <a href="leave_form.php"><i class="fa fa-th"></i><span>Leave Form</span></a>
     <a href="result.php"><i class="fas fa-eye"></i><span>View Result</span></a>
-    <a href="view_search_staff.php" ><i class="fas fa-copy"></i><span>Previous Leaves</span></a>
+    <a href="view_search_staff.php" ><i class="fas fa-copy"></i><span>Leaves History</span></a>
     <a href="#"><i class="fas fa-list"></i><span>Work List</span></a>
     <a href="#"><i class="fas fa-info-circle"></i><span>About</span></a>
     <a href="#"><i class="fas fa-sliders-h"></i><span>Settings</span></a>
