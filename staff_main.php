@@ -28,7 +28,7 @@
   <!--sidebar start-->
   <div class="sidebar">
     <center>
-      <img class="profile_image" alt="">
+      <img src="./css/images/user.png" class="profile_image" alt="">
       <h4>Chad</h4>
     </center>
     <a href="update_info_form.php"><i class="fas fa-user"></i><span>Edit Profile</span></a>
