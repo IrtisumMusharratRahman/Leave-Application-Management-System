@@ -30,11 +30,11 @@ if ($_SESSION["Login"] != "YES")
 					<table class="center" border="0" cellspacing="5" cellpadding="0">
 
 						<tr>
-							<td align="center">&nbsp;</td>
-							<td class="Username" align="center"><strong>Username</strong></td>
-							<td class="password" align="center"><strong>Password</strong></td>
-							<td class="level" align="center"><strong>Level</strong></td>
-							<td align="center">&nbsp;</td>
+							<th align="center">&nbsp;</td>
+							<th class="Username" align="center"><strong>Username</strong></th>
+							<th class="password" align="center"><strong>Password</strong></th>
+							<th class="level" align="center"><strong>Level</strong></th>
+							<th align="center">&nbsp;</td>
 						</tr>
 						<tr>
 							<td align="center"><input name="id" type="hidden" id="id" value="<?php echo $rows['id']; ?>"></td>
