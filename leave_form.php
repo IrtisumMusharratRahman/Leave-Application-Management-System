@@ -54,7 +54,7 @@ require("./Table/config.php");
 
 <div class="leaveform">
 
-<form name="leave_form" action="add_form.php" method="post" onsubmit="return validateForm()">
+<form name="leave_form" action="add_NewApplication.php" method="post" onsubmit="return validateForm()">
 
 
 <h2>Application Form </h2>
