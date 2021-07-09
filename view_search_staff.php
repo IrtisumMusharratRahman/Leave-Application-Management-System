@@ -10,6 +10,7 @@ if ($_SESSION["Login"] != "YES") //if the user is not logged in or has been logg
 
 <head>
 	<title>Search</title>
+	<link rel="stylesheet" href="./css/table_report.css" type="text/css"/>
 
 </head>
 
@@ -25,7 +26,7 @@ if ($_SESSION["Login"] != "YES") //if the user is not logged in or has been logg
 
 			?>
 
-		<h3>Your search result:</h3> 
+		<h1>Your Search Result</h1> 
 
 		
 	
@@ -36,12 +37,12 @@ if ($_SESSION["Login"] != "YES") //if the user is not logged in or has been logg
 				<!-- Print table heading -->
 				<tr>
 					<th align="center"><strong>Name</strong></th>
-					<th  align="center"><strong>ID</strong></th>
-					<th  align="center"><strong>Start Date</strong></th>
-					<th  align="center"><strong>End Date</strong></th>
-					<th  align="center"><strong>Number of Days</strong></th>
-					<th  align="center"><strong>Reason</strong></th>
-					<th  align="center"><strong>Status</strong></th>
+					<th align="center"><strong>ID</strong></th>
+					<th align="center"><strong>Start Date</strong></th>
+					<th align="center"><strong>End Date</strong></th>
+					<th align="center"><strong>Number of Days</strong></th>
+					<th align="center"><strong>Reason</strong></th>
+					<th align="center"><strong>Status</strong></th>
 				</tr>
 
 
@@ -59,8 +60,6 @@ if ($_SESSION["Login"] != "YES") //if the user is not logged in or has been logg
 						<td><?php echo $rows['status']; ?></td>
 					</tr>
 
-
-
 	<?php
 				}
 			} else {
@@ -72,9 +71,9 @@ if ($_SESSION["Login"] != "YES") //if the user is not logged in or has been logg
 
 	</table>
 
-	
+	<br>
+	<br>
 		<button onclick="window.location.href='search_form.php';">Previous Page</button>
-	
 	
 
 		<button onclick="window.location.href='check_login.php';">Main Page</button>
