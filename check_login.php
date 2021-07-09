@@ -3,75 +3,67 @@ session_start();
 require('config.php');
 
 
-if(!($_SESSION["Login"]=="YES" ||$_SESSION["Login"]=="NO" ))
-{
+if (!($_SESSION["Login"] == "YES" || $_SESSION["Login"] == "NO")) {         // true kokhon hobe?
 
-$myusername = $_POST["username"];
-$mypassword = $_POST["password"];
+      $myusername = $_POST["username"];
+      $mypassword = $_POST["password"];
 
-$sql = "SELECT * FROM user WHERE username='$myusername' and password='$mypassword'";
+      $sql = "SELECT * FROM user WHERE username='$myusername' and password='$mypassword'";
 
-$result = mysqli_query($conn, $sql);
+      $result = mysqli_query($conn, $sql);
 
-$rows=mysqli_fetch_assoc($result);
+      if (mysqli_num_rows($result)==0) {
+            echo '<script>
+                        alert("Invalid Username and Password!!!");
+                        window.location.href="login.php";
+                        </script>';
+      }
+      $rows = mysqli_fetch_assoc($result);
 
-$user_name=$rows["username"];
-$ID=$rows["id"];
-$password=$rows["password"];
-$user_level=$rows["level"];
+      $user_name = $rows["username"];
+      $ID = $rows["id"];
+      $password = $rows["password"];
+      $user_level = $rows["level"];
 
-$count=mysqli_num_rows($result);
-
-
-if($count==1){
-
-$_SESSION["Login"] = "YES";
-$_SESSION["USER"] = $user_name;
-$_SESSION["id"] = $ID;
-$_SESSION["PASS"] = $password;
-$_SESSION["LEVEL"] =$user_level;
+      $count = mysqli_num_rows($result);
 
 
-if($_SESSION['LEVEL'] == 1) {
-    require('admin_main.php');
-}
-elseif($_SESSION['LEVEL'] == 2) {
-    
-      require('manager_main.php');
-}
-elseif($_SESSION['LEVEL'] == 3) {
+      if ($count == 1) {
 
-      require('staff_main.php');
-}
-else { echo "Undefined"; }
+            $_SESSION["Login"] = "YES";
+            $_SESSION["USER"] = $user_name;
+            $_SESSION["id"] = $ID;
+            $_SESSION["PASS"] = $password;
+            $_SESSION["LEVEL"] = $user_level;
 
-// require('index.php');
 
+            if ($_SESSION['LEVEL'] == 1) {
+                  require('admin_main.php');
+            } elseif ($_SESSION['LEVEL'] == 2) {
+                  require('manager_main.php');
+            } elseif ($_SESSION['LEVEL'] == 3) {
+                  require('staff_main.php');
+            } else {
+                  echo "Undefined";
+            }
+
+            // require('index.php');
+
+      } else {
+
+            $_SESSION["Login"] = "NO";
+            // header("Location: index.php");
+      }
 } else {
 
-$_SESSION["Login"] = "NO";
-// header("Location: index.php");
+      if ($_SESSION['LEVEL'] == 1) {
+            require('admin_main.php');
+      } elseif ($_SESSION['LEVEL'] == 2) {
+            require('manager_main.php');
+      } elseif ($_SESSION['LEVEL'] == 3) {
+            require('staff_main.php');
+      }
 }
-
-
-
-}else{
-
-if($_SESSION['LEVEL'] == 1) {
-    require('admin_main.php');
-}
-elseif($_SESSION['LEVEL'] == 2) {
-    
-      require('manager_main.php');
-}
-elseif($_SESSION['LEVEL'] == 3) {
-
-      require('staff_main.php');
-}
-
-}
-
-
 
 mysqli_close($conn);
 
