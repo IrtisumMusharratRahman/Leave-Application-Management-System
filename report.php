@@ -13,7 +13,6 @@ if ($_SESSION["Login"] != "YES") //if the user is not logged in or has been logg
 	<link rel="stylesheet" href="./css/table_report.css" type="text/css"/>
 
 	<head>
-
 	<body>
 
 		<h1>Leave Applications Reoprt </h1>
@@ -54,13 +53,8 @@ if ($_SESSION["Login"] != "YES") //if the user is not logged in or has been logg
 				<?php }
 				mysqli_close($conn);
 				?>
-
 			</table>
-
 		<?php }
-
-
-
 		?>
 
 		<br>
