@@ -43,6 +43,16 @@
   <div class="content"></div>
 
 
+<div class="nature">
+  <h1>Like Nature Be Creative</h1>
+  <p>
+    Findings from this study show that nature does indeed have the capacity to enhance creativity.
+    This study explains how nature has the ability to evoke the creative way of thinking by making us more curious,
+    able to get new ideas as well as flexible in our way of thinking.
+  </p>
+  <button onclick="window.location.href='https://positivepsychologynews.com/news/cordele-glass/2020012440097';">More Info</button>
+
+</div>
 </body>
 
 </html>
