@@ -21,25 +21,31 @@ if ($_SESSION["Login"] != "YES") //if the user is not logged in or has been logg
 		$find = $_SESSION['id'];
 		$sql = "SELECT * FROM form WHERE id LIKE '%$find%'";
 		$result = mysqli_query($conn, $sql);
+		$count = mysqli_query($conn, $sql);
+		$_i="1";
+		if (mysqli_num_rows($count) > 0) {
+			$rows['name'];
+			$_i=$_i+1;
+		}
 
 		if (mysqli_num_rows($result) > 0) {
 
-			if(isset($_POST['staffID'])) {?>
+			?>
 
-		<h3>Your search result:</h3> 
+		
 
-		<?php } else {?>
+	
 
 	    <h3>Your leave details:</h3> 
 		
-		<?php } ?>
+	
 			<!-- Start table -->
 			
 			<table width="600" border="1" cellspacing="0" cellpadding="3">
 
 				<!-- Print table heading -->
 				<tr>
-					<th align="center" rowspan="2" ><strong>Name</strong></th>
+					<th align="center" rowspan="<?php echo $_i ?>" ><strong>Name</strong></th>
 					<th  align="center"><strong>ID</strong></th>
 					<th  align="center"><strong>Start Date</strong></th>
 					<th  align="center"><strong>End Date</strong></th>
