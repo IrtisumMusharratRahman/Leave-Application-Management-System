@@ -9,7 +9,10 @@ header("Location: login.php");
 
 
 <html>
-<head><title>Searching Form</title></head>
+<head>
+    <title>Enter Staff ID</title>
+    <link rel="stylesheet" href="./css/table_report.css" type="text/css"/>
+</head>
 <script src="./Js/search_form.js"></script>
 <body>
 
@@ -26,6 +29,7 @@ header("Location: login.php");
 </table>
  
 </form>
+<br>
 
     <button onclick="window.location.href='check_login.php';">Previous Page</button>
 </body>
