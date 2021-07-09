@@ -42,9 +42,7 @@ if ($_SESSION["LEVEL"] == 3) {
 
 	mysqli_close($conn);
 } elseif ($_SESSION["LEVEL"] == 2) {
-	echo "Thank You!";
-
-
+	
 
 	$ID = $_SESSION["Staffid"];         // SESSION e Staffid koi paisos?
 
@@ -54,18 +52,24 @@ if ($_SESSION["LEVEL"] == 3) {
 	$result = mysqli_query($conn, $sql);
 	$rows = mysqli_fetch_assoc($result);
 
+	$id=$rows['id'];
+	$name=$rows['name'];
+	$Sdate=$rows['Sdate'];
+	$Edate=$rows['Edate'];
+	$days=$rows['days'];
+	$reason=$rows['reason'];
+	$status=$_POST['Approval'] ;
 
-	if ($_POST['Approval'] == "Approve")
-		$sql = "UPDATE form SET status='Approved'  WHERE id='$ID'";
-	elseif ($_POST['Approval'] == "Decline")
-		$sql = "UPDATE form SET status='Decline'  WHERE id='$ID'";
+	
 
+$sql = "INSERT INTO form(id, name, Sdate, Edate, days, reason, status) VALUES ('$id','$name','$Sdate','$Edate','$days', '$reason', '$status' )";	
 
+$_SESSION["Table"]="NewApplication";
 
 	if (mysqli_query($conn, $sql)) {
 		echo '<script>
-			alert("Record updated successfully");
-			window.location.href="check_login.php";
+			
+			window.location.href="delete_info.php";
 			</script>';
 	} else {
 		echo "Error: " . $sql . "<br>" . mysqli_error($conn);

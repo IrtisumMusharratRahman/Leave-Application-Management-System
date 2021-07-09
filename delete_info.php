@@ -5,10 +5,11 @@ require ("./Table/config.php");
 if ($_SESSION["Login"] != "YES")
 header("Location: login.php");
 
-$ID = $_GET["id"]?? "";
+$ID = $_SESSION["Staffid"];
+$Table = $_SESSION["Table"];
 
 
-	     $sql = "DELETE FROM user WHERE id = $ID" ;
+	     $sql = "DELETE FROM $Table WHERE id = $ID" ;
 
 	     if (mysqli_query($conn, $sql)) {
 			

@@ -46,8 +46,8 @@ if ($_SESSION["LEVEL"] == 1) {
 							<td><?php echo $rows['username']; ?></td>
 							<td><?php echo $rows['password']; ?></td>
 							<td><?php echo $rows['level']; ?></td>
-							<td align="center"> <button><a href="update_info_form.php?id=<?php echo $rows['id']; ?>">Update</a></button> </td>
-							<td align="center"> <button><a href="delete_info.php?id=<?php echo $rows['id']; ?>">Delete</a></button> </td>
+							<td align="center"> <button><a href="update_info_form.php<?php $_SESSION["Staffid"]=$rows['id']; ?>">Update</a></button> </td>
+							<td align="center"> <button><a href="delete_info.php<?php $_SESSION["Staffid"]=$rows['id']; $_SESSION["Table"]="user"; ?>">Delete</a></button> </td>
 						</tr>
 
 				<?php
