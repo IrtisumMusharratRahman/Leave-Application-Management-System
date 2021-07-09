@@ -18,7 +18,7 @@ if ($_SESSION["LEVEL"] == 3) {
 
 		<?php
 		$ID = $_SESSION["id"];
-		require("config.php");
+		require("./Table/config.php");
 		$sql = "SELECT * FROM form WHERE id='$ID'";
 		$result = mysqli_query($conn, $sql);
 		$rows = mysqli_fetch_assoc($result);
@@ -48,7 +48,7 @@ if ($_SESSION["LEVEL"] == 3) {
 
 	$ID = $_SESSION["Staffid"];         // SESSION e Staffid koi paisos?
 
-	require("config.php");
+	require("./Table/config.php");
 
 	$sql = "SELECT * FROM form WHERE id='$ID'";
 	$result = mysqli_query($conn, $sql);

@@ -18,7 +18,7 @@ if ($_SESSION["Login"] != "YES") //if the user is not logged in or has been logg
 		<h1>View Student Details </h1>
 
 		<?php
-		require("config.php");
+		require("./Table/config.php");
 
 		$sql = "SELECT * FROM form ORDER BY name";
 		$result = mysqli_query($conn, $sql);

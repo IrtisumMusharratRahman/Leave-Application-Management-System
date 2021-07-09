@@ -16,7 +16,7 @@ header("Location: login.php");   //send user to login page
 
 		 $ID = $_SESSION["Staffid"];
 
-		 require ("config.php");
+		 require ("./Table/config.php");
 
 		 $sql="SELECT * FROM form WHERE id='$ID'";
 		 $result = mysqli_query($conn, $sql);

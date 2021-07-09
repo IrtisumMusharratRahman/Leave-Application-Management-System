@@ -19,7 +19,7 @@ if ($_SESSION["Login"] != "YES")
 
 				<?php
 				$ID = $_SESSION["id"];
-				require("config.php");
+				require("./Table/config.php");
 				$sql = "SELECT * FROM user WHERE id='$ID'";
 				$result = mysqli_query($conn, $sql);
 				$rows = mysqli_fetch_assoc($result);
