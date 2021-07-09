@@ -1,39 +1,39 @@
-body{
-margin-left:200px;
-margin-right:60px;
-padding: 0px;
-background-color: rgb(4, 82, 82);
-overflow: hidden;
-font-family: system-ui;
-}	
+body {
+  margin-left: 200px;
+  margin-right: 60px;
+  padding: 0px;
+  background-color: rgb(4, 82, 82);
+  overflow: scroll;
+  font-family: system-ui;
+}
 
-h1{
-text-align: center;
-color: white;
-padding-top: 20px;
+h1 {
+  text-align: center;
+  color: white;
+  padding-top: 20px;
 }
 table {
-font-family: arial, sans-serif;
-border-collapse: collapse;
-width: 80%;
-border: 2rem;
-background-color:rgb(3, 65, 65);
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  border: 2rem;
+  background-color: rgb(3, 65, 65);
 }
 
 th {
-text-align: center;
-padding:15px;
-color: black;
-border-bottom: 1px solid #81818140;
-background-color: darkorange;
+  text-align: center;
+  padding: 15px;
+  color: black;
+  border-bottom: 1px solid #81818140;
+  background-color: darkorange;
 }
 td {
-text-align: center;
-padding:7px;
-color: #ddd;
-border-bottom: 1px solid rgb(0, 32, 102);
+  text-align: center;
+  padding: 7px;
+  color: #ddd;
+  border-bottom: 1px solid rgb(0, 32, 102);
 }
 
-tr:hover{
-    background-color: #1b203d;
+tr:hover {
+  background-color: #1b203d;
 }

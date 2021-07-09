@@ -36,6 +36,7 @@ if ($_SESSION["LEVEL"] == 2) {
 						<th align="center"><strong>Days</strong></th>
 						<th align="center"><strong>Reason</strong></th>
 						<th align="center"><strong>Status</strong></th>
+						<th align="center"><strong>Approval</strong></th>
 					</tr>
 
 					<?php
@@ -49,7 +50,7 @@ if ($_SESSION["LEVEL"] == 2) {
 							<td><?php echo $rows['reason']; ?></td>
 							<td><?php echo $rows['status']; ?></td>
 							<td align="center">
-								<a href="Approve.php?id=<?php $_SESSION["Staffid"] = $rows['id']; ?>">Approval</a>
+							<button href="Approve.php?id=<?php $_SESSION["Staffid"] = $rows['id']; ?>">Approval</button>
 							</td>
 
 
