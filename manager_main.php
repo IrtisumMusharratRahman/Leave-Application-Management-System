@@ -44,7 +44,7 @@
 	<br>
 	<br>
 	<div class="clearfix"></div>
-</div>
+    </div>
 
 	<div class="clearfix"></div>
 	<br/>
@@ -80,56 +80,56 @@
 		<div class="content-box">
 			<p>Staff of The Month <span>Sell All</span></p>
 			<br/>
-			<table>
-  <tr>
-    <th>Name</th>
-    <th>Position</th>
-    <th>Country</th>
-  </tr>
-  <tr>
-    <td>Chad</td>
-    <td>Marketing Coordinator</td>
-    <td>Germany</td>
-  </tr>
-  <tr>
-    <td>Cindy</td>
-    <td>President of Sales</td>
-    <td>Mexico</td>
-  </tr>
-  <tr>
-    <td>Roland Mendel</td>
-    <td>Web Designer</td>
-    <td>Austria</td>
-  </tr>
-  <tr>
-    <td>Helen Bennett</td>
-    <td>Project Manager</td>
-    <td>UK</td>
-  </tr>
-  
-  
-</table>
+	<table>
+	<tr>
+		<th>Name</th>
+		<th>Position</th>
+		<th>Country</th>
+	</tr>
+	<tr>
+		<td>Chad</td>
+		<td>Marketing Coordinator</td>
+		<td>Germany</td>
+	</tr>
+	<tr>
+		<td>Cindy</td>
+		<td>President of Sales</td>
+		<td>Mexico</td>
+	</tr>
+	<tr>
+		<td>Roland Mendel</td>
+		<td>Web Designer</td>
+		<td>Austria</td>
+	</tr>
+	<tr>
+		<td>Helen Bennett</td>
+		<td>Project Manager</td>
+		<td>UK</td>
+	</tr>
+	
+	
+	</table>
 
-</div>
-   </div>
-	   </div>
-	        <div class="col-div-4">
-		      <div class="box-4">
-		           <div class="content-box">
-			           <p>Total Sales <span>Sell All</span></p>
-		           </div>
-				   <div class="col-div-3">
-		            <div class="box">
-			           <p>78<br/><span>Projects</span></p>
-	                  	</div>
-	                </div>
-	            </div>
-				
-		    </div>
-       </div>
 	</div>
+	</div>
+		</div>
+				<div class="col-div-4">
+				<div class="box-4">
+					<div class="content-box">
+						<p>Total Sales <span>Sell All</span></p>
+					</div>
+					<div class="col-div-3">
+						<div class="box">
+						<p>78<br/><span>Projects</span></p>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+		</div>
+		</div>
 
-</div>
+	</div>
 </body>
 
 </html>
