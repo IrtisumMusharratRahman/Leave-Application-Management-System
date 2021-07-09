@@ -19,8 +19,8 @@ if ($_SESSION["LEVEL"] == 3) {
 	$_SESSION["End_Date"] =  $Edate;
 
 
-	require("config.php");
-
+	require("./Table/config.php");
+	
 	$sql = "INSERT INTO form(id, name, Sdate, Edate, days, reason, status) VALUES ('$id','$name','$Sdate','$Edate','$days', '$reason', '$status' )";
 
 	if (mysqli_query($conn, $sql)) {

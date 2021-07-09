@@ -16,7 +16,7 @@ if ($_SESSION["Login"] != "YES") //if the user is not logged in or has been logg
 	<body>
 
 		<?php
-		require("config.php");
+		require("./Table/config.php");
 		$find = $_POST['staffID'];
 		$sql = "SELECT * FROM form WHERE id LIKE '%$find%'";
 		$result = mysqli_query($conn, $sql);

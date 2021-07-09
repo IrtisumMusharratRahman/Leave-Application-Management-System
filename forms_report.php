@@ -20,7 +20,7 @@ if ($_SESSION["LEVEL"] == 2) {
 			<h1>View Student Details</h1>
 
 			<?php
-			require("config.php");
+		    require ("./Table/config.php");
 
 			$sql = "SELECT * FROM form where status='New Application'";
 			$result = mysqli_query($conn, $sql);
