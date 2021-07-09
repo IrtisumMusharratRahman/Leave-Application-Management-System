@@ -24,9 +24,9 @@ body {
     color: #19b3d3;
   }
   
-  .logout_btn {
+  .main_btn {
     padding: 5px;
-    background: #19b3d3;
+    background: #0b87a6;
     text-decoration: none;
     float: right;
     margin-top: -30px;
@@ -38,9 +38,19 @@ body {
     transition: 0.5s;
     transition-property: background;
   }
+  .right_area > button {
+    cursor: pointer;
+    position: relative;
+    border-radius: 3.75rem;
+    line-height: 2.5rem;
+    font-size: 1rem;
+    padding: 0px 20px 0px 20px;
+    width: 10em;
+    border: 1px solid #012880;
+  }
   
-  .logout_btn:hover {
-    background: #0b87a6;
+  .main_btn:hover {
+    background: #012880;
   }
   
   .sidebar {
@@ -149,28 +159,9 @@ body {
     transition: background-color 2s;
   }
   
-  .right_area > button {
-    cursor: pointer;
-    position: relative;
+ 
   
-    border-radius: 3.75rem;
-    line-height: 2.5rem;
-    font-size: 1rem;
-    padding: 0px 20px 0px 20px;
-    width: 10em;
-    border: 1px solid #012880;
-    background-image: linear-gradient(-180deg, #ff8989 0%, #c01f1f 100%);
-  }
-  
-  .right_area > button > img {
-    position: fixed;
-    width: 30px;
-    height: 30px;
-    margin-top: 5px;
-    align-items: center;
-    padding-left: 5px;
-  }
-  
+ 
   h2
   {
     text-align: center;
@@ -187,9 +178,14 @@ body {
     color:white;
     font-size: 16px;
     border-radius: 12px;
-    transition-duration: 0.4s;
-    width: 100px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+    position: relative;
+    border-radius: 3.75rem;
+    line-height: 2.5rem;
+    font-size: 1rem;
+    padding: 0px 20px 0px 20px;
+    width: 10em;
+    border: 1px solid #012880;
   }
 
   
