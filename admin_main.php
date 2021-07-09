@@ -48,30 +48,30 @@
 	<div class="clearfix"></div>
 </div>
 
-	<div class="clearfix"></div>
+<div class="clearfix"></div>
 	<br/>
 	
 	<div class="col-div-3">
 		<div class="box">
-			<p>67<br/><span>Customers</span></p>
-			<i class="fa fa-users box-icon"></i>
-		</div>
-	</div>
-	<div class="col-div-3">
-		<div class="box">
-			<p>88<br/><span>Projects</span></p>
+			<p>67<br/><span>Total Applications</span></p>
 			<i class="fa fa-list box-icon"></i>
 		</div>
 	</div>
 	<div class="col-div-3">
 		<div class="box">
-			<p>99<br/><span>Orders</span></p>
-			<i class="fa fa-shopping-bag box-icon"></i>
+			<p>30<br/><span>New Applications</span></p>
+			<i class="fa fa-list box-icon"></i>
 		</div>
 	</div>
 	<div class="col-div-3">
 		<div class="box">
-			<p>78<br/><span>Tasks</span></p>
+			<p>7<br/><span>Pending Approval</span></p>
+			<i class="fa fa-list box-icon"></i>
+		</div>
+	</div>
+	<div class="col-div-3">
+		<div class="box">
+			<p>50<br/><span>Approve Applications</span></p>
 			<i class="fa fa-tasks box-icon"></i>
 		</div>
 	</div>
@@ -80,32 +80,32 @@
 	<div class="col-div-8">
 		<div class="box-8">
 		<div class="content-box">
-			<p>Top Selling Projects <span>Sell All</span></p>
+			<p>Staff of The Month <span>Sell All</span></p>
 			<br/>
 			<table>
   <tr>
-    <th>Company</th>
-    <th>Contact</th>
+    <th>Name</th>
+    <th>Position</th>
     <th>Country</th>
   </tr>
   <tr>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
+    <td>Chad</td>
+    <td>Marketing Coordinator</td>
     <td>Germany</td>
   </tr>
   <tr>
-    <td>Centro comercial Moctezuma</td>
-    <td>Francisco Chang</td>
+    <td>Cindy</td>
+    <td>President of Sales</td>
     <td>Mexico</td>
   </tr>
   <tr>
-    <td>Ernst Handel</td>
     <td>Roland Mendel</td>
+    <td>Web Designer</td>
     <td>Austria</td>
   </tr>
   <tr>
-    <td>Island Trading</td>
     <td>Helen Bennett</td>
+    <td>Project Manager</td>
     <td>UK</td>
   </tr>
   
