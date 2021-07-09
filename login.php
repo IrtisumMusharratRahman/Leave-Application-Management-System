@@ -7,7 +7,6 @@ $_SESSION["Login"] = "XXX";
 
 
 
-
 <html>
 
 <head>
@@ -17,7 +16,7 @@ $_SESSION["Login"] = "XXX";
 
 <body>
 
-	<b class="head">Welcome! Leave Application Management System</b>
+	<p class="head">Welcome! Leave Application Management System</p>
 	<br />
 	<br />
 	<form method="post" class="form" name="login_form" action="check_login.php" onsubmit="return validateLoginForm()">
