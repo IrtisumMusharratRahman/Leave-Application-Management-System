@@ -11,18 +11,9 @@ if ($_SESSION["Login"] != "YES")
 	<title>Updating User Data</title>
 	<link rel="stylesheet" href="./css/update_info_form.css">
 
-	<head>
+</head>
 
 	<body>
-
-		<html>
-
-		<head>
-			<title>Updating User Data</title>
-
-			<head>
-
-			<body>
 
 				<h1>Update User Data Form</h1>
 
@@ -54,10 +45,6 @@ if ($_SESSION["Login"] != "YES")
 							<td align="center"><input type="submit" id="update" name="Submit" value="Update"></td>
 						</tr>
 
-
-						<button onclick="window.location.href='check_login.php';">Previous Page</button>
-
-			</body>
 
 
 			<button id="p_page" onclick="window.location.href='check_login.php';">Previous Page</button>
