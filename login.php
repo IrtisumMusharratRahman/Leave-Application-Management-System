@@ -1,6 +1,6 @@
 <?php
 session_start();
-require('config.php');
+require('./Table/config.php');
 
 $_SESSION["Login"] = "XXX";
 ?>

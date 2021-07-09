@@ -16,7 +16,7 @@ if ($_SESSION["Login"] != "YES") //if the user is not logged in or has been logg
 	<body>
 
 		<?php
-		require("config.php");
+		require("./Table/config.php");
 		if(isset($_POST['staffID']))
 		$find = $_POST['staffID'];
 		else
@@ -25,7 +25,7 @@ if ($_SESSION["Login"] != "YES") //if the user is not logged in or has been logg
 		$result = mysqli_query($conn, $sql);
 
 		if (mysqli_num_rows($result) > 0) {
-			
+
 			if(isset($_POST['staffID'])) {?>
 
 		<h3>Your search result:</h3> 
