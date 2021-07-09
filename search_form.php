@@ -10,12 +10,19 @@ header("Location: login.php");
 
 <html>
 <head><title>Searching Form</title></head>
-
+<script>
+    function validation(){
+        if (document.forms["form_search"]["staffID"].value == "") {
+				alert("Please Enter A Staff ID!!!");
+				return false;
+			}
+    }
+</script>
 <body>
 
 <b>Search for Staff</b><br/><br/>
 
-<form name="form_search" method ="POST" action="view_search_staff.php">
+<form name="form_search" method ="POST" action="view_search_staff.php" onsubmit="return validation()">
 
 <table border="0">
 	<tr>

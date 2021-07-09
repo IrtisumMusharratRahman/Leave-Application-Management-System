@@ -29,7 +29,6 @@
 
     </div>
   </header>
-  <!--header area end-->
   <!--sidebar start-->
   <div class="sidebar">
     <center>

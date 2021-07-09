@@ -2,71 +2,77 @@
 session_start();
 
 if ($_SESSION["Login"] != "YES")
-header("Location: login.php");
+	header("Location: login.php");
 
 if ($_SESSION["LEVEL"] == 2) {
 
 ?>
 
 	<html>
-	<head><title>Viewing Student Data</title><head>
-	<body>
 
-	<h1>View Student Details</h1>
+	<head>
+		<title>Viewing Student Data</title>
 
-		<?php
-	     require ("config.php");
+		<head>
 
-	     $sql = "SELECT * FROM form where status='New Application'";
-		 $result = mysqli_query($conn, $sql);
+		<body>
 
-		 if (mysqli_num_rows($result) > 0) { 	?>
+			<h1>View Student Details</h1>
 
-		<table width="600" border="1" cellspacing="0" cellpadding="3">
+			<?php
+			require("config.php");
 
-		<tr>
-		<td align="center"><strong>Name</strong></td>
-		<td align="center"><strong>ID</strong></td>
-		<td align="center"><strong>Days</strong></td>
-		<td align="center"><strong>Reason</strong></td>
-		<td align="center"><strong>Status</strong></td>
-		</tr>
+			$sql = "SELECT * FROM form where status='New Application'";
+			$result = mysqli_query($conn, $sql);
 
-		<?php
-			while($rows = mysqli_fetch_assoc($result)) {
-		?>
+			if (mysqli_num_rows($result) > 0) { 	?>
 
-	     <tr>
-			<td><?php echo $rows['name']; ?></td>
-			<td><?php echo $rows['id']; ?></td>
-			<td><?php echo $rows['days']; ?></td>
-			<td><?php echo $rows['reason']; ?></td>
-			<td><?php echo $rows['status']; ?></td>
-      <td align="center"> 
-	  <a href="Approve.php?id=<?php $_SESSION["Staffid"] = $rows['id']; ?>">Approval</a></td>
-		
-		
-		</tr>
+				<table width="600" border="1" cellspacing="0" cellpadding="3">
 
-		<?php }
+					<tr>
+						<td align="center"><strong>Name</strong></td>
+						<td align="center"><strong>ID</strong></td>
+						<td align="center"><strong>Days</strong></td>
+						<td align="center"><strong>Reason</strong></td>
+						<td align="center"><strong>Status</strong></td>
+					</tr>
 
+					<?php
+					while ($rows = mysqli_fetch_assoc($result)) {
+					?>
+
+						<tr>
+							<td><?php echo $rows['name']; ?></td>
+							<td><?php echo $rows['id']; ?></td>
+							<td><?php echo $rows['days']; ?></td>
+							<td><?php echo $rows['reason']; ?></td>
+							<td><?php echo $rows['status']; ?></td>
+							<td align="center">
+								<a href="Approve.php?id=<?php $_SESSION["Staffid"] = $rows['id']; ?>">Approval</a>
+							</td>
+
+
+						</tr>
+
+			<?php }
+				}
+			} else {
+				echo "<h3>There are no records to show</h3>";
 			}
-		} else {
-			echo "<h3>There are no records to show</h3>";
-			}
 
-	     mysqli_close($conn);
-	   ?>
+			mysqli_close($conn);
+			?>
 
-	    </table>
+				</table>
 
-		<br><br>
-	 
-		<button onclick="window.location.href='check_login.php';">Previous Page</button>
-		
-	
-		
-		
+				<br><br>
 
-	</body>
+				<button onclick="window.location.href='check_login.php';">Previous Page</button>
+
+
+
+
+
+		</body>
+
 	</html>
