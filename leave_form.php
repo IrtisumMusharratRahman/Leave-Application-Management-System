@@ -59,8 +59,8 @@ require("./Table/config.php");
       <h3>Application <span>Page</span></h3>
     </div>
     <div class="right_area">
-      <button class="logout_btn" onclick="window.location.href='logout.php';"> Logout |<img src="./css/images/logout.png" alt="Italian Trulli"> </button>
-
+    
+      <button class="main_btn" onclick="window.location.href='check_login.php';"><i class="fas fa-home"></i> Main Page</button>
 
     </div>
   </header>
@@ -75,8 +75,8 @@ require("./Table/config.php");
     <a href="result.php"><i class="fas fa-eye"></i><span>View Result</span></a>
     <a href="view_search_staff.php" ><i class="fas fa-copy"></i><span>Previous Leaves</span></a>
     <a href="#"><i class="fas fa-list"></i><span>Work List</span></a>
-    <a href="#"><i class="fas fa-info-circle"></i><span>About</span></a>
     <a href="#"><i class="fas fa-sliders-h"></i><span>Settings</span></a>
+    <a href="logout.php"class="icon-a"><i class="fas fa-sign-out-alt"></i> &nbsp;&nbsp;Logout</a>
   </div>
   <!--sidebar end-->
 
