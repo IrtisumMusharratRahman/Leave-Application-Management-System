@@ -50,7 +50,8 @@ if ($_SESSION["LEVEL"] == 2) {
 							<td><?php echo $rows['reason']; ?></td>
 							<td><?php echo $rows['status']; ?></td>
 							<td align="center">
-							<button href="Approve.php?id=<?php $_SESSION["Staffid"] = $rows['id']; ?>">Approval</button>
+							<button onclick="window.location.href='Approve.php';">Approval</button>
+							<?php $_SESSION["Staffid"] = $rows['id']; ?>
 							</td>
 
 
