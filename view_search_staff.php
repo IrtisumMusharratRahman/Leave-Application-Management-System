@@ -25,10 +25,18 @@ if ($_SESSION["Login"] != "YES") //if the user is not logged in or has been logg
 		$result = mysqli_query($conn, $sql);
 
 		if (mysqli_num_rows($result) > 0) {
-		?>
+			
+			if(isset($_POST['staffID'])) {?>
 
+		<h3>Your search result:</h3> 
+
+		<?php } else {?>
+
+	    <h3>Your leave details:</h3> 
+		
+		<?php } ?>
 			<!-- Start table -->
-			<h3>Your search result:</h3>
+			
 			<table width="600" border="1" cellspacing="0" cellpadding="3">
 
 				<!-- Print table heading -->
