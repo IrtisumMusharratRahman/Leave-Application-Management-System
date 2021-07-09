@@ -12,6 +12,7 @@ if ($_SESSION["LEVEL"] == 1) {
 
 	<head>
 		<title>Staff Data</title>
+		<link rel="stylesheet" href="./css/table_report.css" type="text/css"/>
 
 		<head>
 
@@ -30,11 +31,11 @@ if ($_SESSION["LEVEL"] == 1) {
 				<table width="600" border="1" cellspacing="0" cellpadding="3">
 
 					<tr>
-						<td align="center"><strong>Staff Name</strong></td>
-						<td align="center"><strong>Password</strong></td>
-						<td align="center"><strong>Level</strong></td>
-						<td align="center"><strong>Update</strong></td>
-						<td align="center"><strong>Delete</strong></td>
+						<th align="center"><strong>Staff Name</strong></th>
+						<th align="center"><strong>Password</strong></th>
+						<th align="center"><strong>Level</strong></th>
+						<th align="center"><strong>Update</strong></th>
+						<th align="center"><strong>Delete</strong></th>
 					</tr>
 
 					<?php

@@ -56,7 +56,7 @@ require("./Table/config.php");
       <i class="fas fa-bars" id="sidebar_btn"></i>
     </label>
     <div class="left_area">
-      <h3>Application Page <span>Staffs</span></h3>
+      <h3>Application <span>Page</span></h3>
     </div>
     <div class="right_area">
       <button class="logout_btn" onclick="window.location.href='logout.php';"> Logout |<img src="./css/images/logout.png" alt="Italian Trulli"> </button>

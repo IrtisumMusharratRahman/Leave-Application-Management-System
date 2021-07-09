@@ -18,7 +18,7 @@ $ID = $_GET["id"]?? "";
           mysqli_close($conn);
 
 			echo "<p><a href='view_info.php'>Click here to update another user's information</a></p>";
-		  echo "<p> <a href= 'admin_main.php'> Go back to main page</a> </p>"
+		    echo "<p> <a href= 'admin_main.php'> Go back to main page</a> </p>"
 
 
   ?>

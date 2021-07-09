@@ -8,9 +8,10 @@ header("Location: login.php");   //send user to login page
 ?>
 	<html>
 	<head><title>Approing</title><head>
+  <link rel="stylesheet" href="./css/table_report.css" type="text/css"/>
 	<body>
 
-	<h1>Approving Staff Leave Application</h1>
+	<h1>Approve/Decline Leave Application</h1>
 
 <?php
 
