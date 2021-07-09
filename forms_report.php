@@ -11,7 +11,7 @@ if ($_SESSION["LEVEL"] == 2) {
 	<html>
 
 	<head>
-		<title>Viewing Student Data</title>
+		<title>New Applications</title>
 
 		<head>
 		<link rel="stylesheet" href="./css/table_report.css" type="text/css"/>
@@ -23,7 +23,7 @@ if ($_SESSION["LEVEL"] == 2) {
 			<?php
 			require("./Table/config.php");
 
-			$sql = "SELECT * FROM form where status='New Application'";
+			$sql = "SELECT * FROM NewApplication";
 			$result = mysqli_query($conn, $sql);
 
 			if (mysqli_num_rows($result) > 0) { 	?>
@@ -50,8 +50,9 @@ if ($_SESSION["LEVEL"] == 2) {
 							<td><?php echo $rows['reason']; ?></td>
 							<td><?php echo $rows['status']; ?></td>
 							<td align="center">
-							<button onclick="window.location.href='Approve.php';">Approval</button>
 							<?php $_SESSION["Staffid"] = $rows['id']; ?>
+							<button onclick="window.location.href='Approve.php';">Approval</button>
+							
 							</td>
 
 

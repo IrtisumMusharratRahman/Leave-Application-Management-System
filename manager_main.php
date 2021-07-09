@@ -14,7 +14,7 @@
   <p class="level">Manager</p>
   <a href="check_login.php" class="icon-a"><i class="fa fa-dashboard icons"></i> &nbsp;&nbsp;Dashboard</a>
   <a href="update_info_form.php"class="icon-a"><i class="fa fa-user icons"></i> &nbsp;&nbsp;Edit Profile</a>
-  <a href="forms_report.php" class="icon-a"><i class="fa fa-edit"></i> &nbsp;&nbsp; View Aspplications</a>
+  <a href="forms_report.php" class="icon-a"><i class="fa fa-edit"></i> &nbsp;&nbsp; View Applications</a>
   <a href="report.php"class="icon-a"><i class="fa fa-file"></i> &nbsp;&nbsp; View Report</a>
   <a href="search_form.php"class="icon-a"><i class="fa fa-search" ></i> &nbsp;&nbsp;Search A Staff</a>
   <br>
