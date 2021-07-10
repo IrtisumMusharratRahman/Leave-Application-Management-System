@@ -12,7 +12,7 @@ body {
 
 .head {
   text-transform: uppercase;
-  color: chartreuse;
+  color: rgb(255, 255, 255);
   font-size: large;
   text-align: center;
   font-weight: bold;
@@ -20,11 +20,12 @@ body {
   word-spacing: 0.1rem;
 }
 .form {
-  margin-left: 510px;
-  padding-top: 50px;
+  margin-left: 5px;
   max-height: 500px;
   max-width: 500px;
   border: solid 2px whitesmoke;
+  border-radius: 25px;
+  background-color:  rgb(119, 120, 211);
 }
 
 .btn {
@@ -34,11 +35,20 @@ body {
   border-radius: 25px;
   font-size: medium;
   font-weight: 500px;
-  margin-left: 190px;
+  margin-left: 160px;
 }
 
 .btn:hover {
   color: black;
   background-color: darkorange;
   transition: 0.5s;
+}
+#container{
+  align-items: center;
+  background-color: indigo;
+  margin-left: 500px;
+  margin-right: 500px;
+  position: fixed;
+  border-radius: 25px;
+  box-shadow: rgb(170, 13, 13);
 }

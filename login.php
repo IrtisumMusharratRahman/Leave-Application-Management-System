@@ -6,7 +6,6 @@ $_SESSION["Login"] = "XXX";
 ?>
 
 
-
 <html>
 
 <head>
@@ -16,17 +15,17 @@ $_SESSION["Login"] = "XXX";
 </head>
 
 <body>
-
-	<p class="head">Welcome! Leave Application Management System</p>
-	<br />
-	<br />
-	<form method="post" class="form" name="login_form" action="check_login.php" onsubmit="return validateLoginForm()">
-		<p>Username: <input type="text" placeholder="username" name="username" /></p>
-		<p>Password: <input type="password" placeholder="password" name="password" /></p>
+	<div id="container">
+		<p class="head">Welcome To! Leave Application Management System</p>
 		<br />
-		<p><input type="submit" class="btn" value="Login" /></p>
-	</form>
-
+		<br />
+		<form method="post" class="form" name="login_form" action="check_login.php" onsubmit="return validateLoginForm()">
+			<p>Username: <input type="text" size="30" placeholder="username" name="username" /></p>
+			<p>Password: <input type="password" size="30" placeholder="password" name="password" /></p>
+			<br />
+			<p><input type="submit" class="btn" value="Login" /></p>
+		</form>
+	</div>
 </body>
 
 </html>
