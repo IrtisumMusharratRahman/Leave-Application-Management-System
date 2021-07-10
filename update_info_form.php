@@ -9,7 +9,6 @@ if ($_SESSION["Login"] != "YES")
 
 <head>
 	<title>Updating User Data</title>
-	<!-- <link rel="stylesheet" href="./css/update_info_form.css"> -->
 	<link rel="stylesheet" href="./css/table_report.css" type="text/css" />
 
 	<!-- <script >
