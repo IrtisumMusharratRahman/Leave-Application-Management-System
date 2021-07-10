@@ -18,7 +18,7 @@ if ($_SESSION["Login"] != "YES")
 
 <body>
 
-    <h1>Search for Staff Leav details</h1><br /><br />
+    <h1>Search for Staff Leave details</h1><br /><br />
 
     <form name="form_search" method="POST" action="view_search_staff.php" onsubmit="return validation()">
 
