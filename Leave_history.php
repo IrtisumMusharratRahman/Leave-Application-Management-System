@@ -67,7 +67,6 @@ if ($_SESSION["Login"] != "YES") //if the user is not logged in or has been logg
 					
 				?>
 					<tr>
-						
 						<td><?php echo $rows['Sdate']; ?></td>
 						<td><?php echo $rows['Edate']; ?></td>
 						<td><?php echo $rows['days']; ?></td>
@@ -76,7 +75,7 @@ if ($_SESSION["Login"] != "YES") //if the user is not logged in or has been logg
 					</tr>	
 
 	<?php
-				}
+			     }
 			} else {
 				echo '<script>alert("No records found")</script>';
 				
