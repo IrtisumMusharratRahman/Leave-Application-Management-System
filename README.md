@@ -27,3 +27,9 @@ session), view data (using sorting & searching)
 vii) Admin can view all pages, while Managers and Staff can view limited pages (for
 example, only Admin can add new user, thus this page is only accessible to Admin) –
 user level (using session)
+
+Below are added criteria that are expected in the developed system :
+a.Able to implement the usage of Session
+b.Able to demonstrate the benefit of using Cookie
+c.Able to perform user input validationd.Able to demonstrate dynamic HTML through JavaScript (DOM)
+e.Clean, consistent and attractive presentation (good use of HTML + CSS)
