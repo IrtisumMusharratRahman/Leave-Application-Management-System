@@ -3,7 +3,6 @@
   margin: 0;
   box-sizing: border-box;
 }
-
 body {
   background-image: url("./images/login.jpg");
   text-align: center;
@@ -31,11 +30,11 @@ body {
 .btn {
   display: block;
   height: 40px;
-  width: 150px;
+  width: 140px;
   border-radius: 25px;
   font-size: medium;
   font-weight: 500px;
-  margin-left: 160px;
+  margin-left: 140px;
 }
 
 .btn:hover {

@@ -16,7 +16,7 @@ $_SESSION["Login"] = "XXX";
 
 <body>
 	<div id="container">
-		<p class="head">Welcome To! Leave Application Management System</p>
+		<p class="head">Leave Application Management System</p>
 		<br />
 		<br />
 		<form method="post" class="form" name="login_form" action="check_login.php" onsubmit="return validateLoginForm()">
