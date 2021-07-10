@@ -40,7 +40,7 @@ if (!($_SESSION["Login"] == "YES" || $_SESSION["Login"] == "NO")) {
             if ($_SESSION['LEVEL'] == 1) {
                   require('admin_main.html');
             } elseif ($_SESSION['LEVEL'] == 2) {
-                  require('manager_main.php');
+                  require('manager_main.html');
             } elseif ($_SESSION['LEVEL'] == 3) {
                   require('staff_main.html');
             } else {
@@ -59,7 +59,7 @@ if (!($_SESSION["Login"] == "YES" || $_SESSION["Login"] == "NO")) {
       if ($_SESSION['LEVEL'] == 1) {
             require('admin_main.html');
       } elseif ($_SESSION['LEVEL'] == 2) {
-            require('manager_main.php');
+            require('manager_main.html');
       } elseif ($_SESSION['LEVEL'] == 3) {
             require('staff_main.html');
       }
