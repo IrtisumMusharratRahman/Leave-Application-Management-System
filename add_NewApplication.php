@@ -24,7 +24,7 @@ if ($_SESSION["LEVEL"] == 3) {
 	$sql = "INSERT INTO NewApplication(id, name, Sdate, Edate, days, reason, status) VALUES ('$id','$name','$Sdate','$Edate','$days', '$reason', '$status' )";
 
 	if (mysqli_query($conn, $sql)) {
-	
+
 		echo '<script>
 			alert("New record created successfully");
 			window.location.href="check_login.php";
@@ -35,5 +35,4 @@ if ($_SESSION["LEVEL"] == 3) {
 
 
 	mysqli_close($conn);
-
 }

@@ -12,8 +12,6 @@ if ($_SESSION["Login"] != "YES")
 	<!-- <link rel="stylesheet" href="./css/update_info_form.css"> -->
 	<link rel="stylesheet" href="./css/table_report.css" type="text/css" />
 
-	
-
 	<!-- <script >
 		function currentInfo(){
 
@@ -41,13 +39,13 @@ if ($_SESSION["Login"] != "YES")
 	?>
 
 	<?php
-		$name=$rows['username'];
-		$pass=$rows['password'];
-		$lvl= $rows['level'];
+	$name = $rows['username'];
+	$pass = $rows['password'];
+	$lvl = $rows['level'];
 	?>
 
 	<!-- <button onclick="currentInfo()">Show Previous ID, Password, Level</button> -->
-	
+
 
 	<form name="form1" method="post" action="update_info.php">
 		<table class="center" border="0" cellspacing="5" cellpadding="0">
@@ -71,7 +69,7 @@ if ($_SESSION["Login"] != "YES")
 		<br>
 		<br>
 	</form>
-		<button id="p_page" onclick="window.location.href='check_login.php';">Previous Page</button>
+	<button id="p_page" onclick="window.location.href='check_login.php';">Previous Page</button>
 </body>
 
 </html>

@@ -1,6 +1,6 @@
 <?php
 
-require ("config.php");
+require("config.php");
 
 
 $sql = "INSERT INTO NewApplication (id, name,Sdate, Edate, days, reason, status)
@@ -15,7 +15,3 @@ if (mysqli_multi_query($conn, $sql)) {
 } else {
   echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
-
-
-
-?>

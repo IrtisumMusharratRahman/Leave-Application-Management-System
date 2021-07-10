@@ -10,7 +10,7 @@ if ($_SESSION["Login"] != "YES") //if the user is not logged in or has been logg
 
 <head>
 	<title>Viewing leave Report</title>
-	<link rel="stylesheet" href="./css/table_report.css" type="text/css"/>
+	<link rel="stylesheet" href="./css/table_report.css" type="text/css" />
 
 	<head>
 

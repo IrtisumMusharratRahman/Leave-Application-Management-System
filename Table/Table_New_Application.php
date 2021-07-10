@@ -1,6 +1,6 @@
 <?php
 
-require_once ("config.php");
+require_once("config.php");
 
 
 $sql = "CREATE TABLE NewApplication(
@@ -13,10 +13,7 @@ $sql = "CREATE TABLE NewApplication(
 		status VARCHAR(50))";
 
 if (mysqli_query($conn, $sql)) {
-  echo "<h3>Table form created successfully</h3>";
+	echo "<h3>Table form created successfully</h3>";
 } else {
-  echo "Error creating table: " . mysqli_error($conn);
+	echo "Error creating table: " . mysqli_error($conn);
 }
-
-
-?>

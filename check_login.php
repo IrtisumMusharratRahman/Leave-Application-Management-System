@@ -66,5 +66,3 @@ if (!($_SESSION["Login"] == "YES" || $_SESSION["Login"] == "NO")) {         // t
 }
 
 mysqli_close($conn);
-
-?>

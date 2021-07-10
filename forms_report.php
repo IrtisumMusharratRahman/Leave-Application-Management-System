@@ -14,7 +14,7 @@ if ($_SESSION["LEVEL"] == 2) {
 		<title>New Applications</title>
 
 		<head>
-		<link rel="stylesheet" href="./css/table_report.css" type="text/css"/>
+			<link rel="stylesheet" href="./css/table_report.css" type="text/css" />
 
 		<body>
 
@@ -50,10 +50,10 @@ if ($_SESSION["LEVEL"] == 2) {
 							<td><?php echo $rows['reason']; ?></td>
 							<td><?php echo $rows['status']; ?></td>
 							<td align="center">
-							<?php $_SESSION["Staffid"] = $rows['id']; ?>
-							<?php $_SESSION["days"] = $rows['days']; ?>
-							<button onclick="window.location.href='Approve.php';">Approval</button>
-							
+								<?php $_SESSION["Staffid"] = $rows['id']; ?>
+								<?php $_SESSION["days"] = $rows['days']; ?>
+								<button onclick="window.location.href='Approve.php';">Approval</button>
+
 							</td>
 
 

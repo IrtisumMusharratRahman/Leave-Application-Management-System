@@ -2,7 +2,6 @@
 
 require_once ("config.php");
 
-
 $sql = "CREATE TABLE form(
 		id VARCHAR(15),
  		name VARCHAR(50),
@@ -17,6 +16,3 @@ if (mysqli_query($conn, $sql)) {
 } else {
   echo "Error creating table: " . mysqli_error($conn);
 }
-
-
-?>

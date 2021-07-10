@@ -22,8 +22,7 @@ if ($_SESSION["LEVEL"] == 2) {
 		echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 	}
 	mysqli_close($conn);
-}
-elseif($_SESSION["LEVEL"] == 1){
+} elseif ($_SESSION["LEVEL"] == 1) {
 	$ID = $_SESSION["Staffid"];
 
 	$sql = "DELETE FROM user WHERE id = '$ID'";
@@ -39,5 +38,4 @@ elseif($_SESSION["LEVEL"] == 1){
 		echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 	}
 	mysqli_close($conn);
-
 }
