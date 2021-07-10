@@ -78,7 +78,7 @@
 	<div class="col-div-8">
 		<div class="box-8">
 		<div class="content-box">
-			<p>Staff of The Month <span>Sell All</span></p>
+			<p>Staff of The Month <span>Seee All</span></p>
 			<br/>
 	<table>
 	<tr>
