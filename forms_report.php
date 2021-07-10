@@ -51,6 +51,7 @@ if ($_SESSION["LEVEL"] == 2) {
 							<td><?php echo $rows['status']; ?></td>
 							<td align="center">
 							<?php $_SESSION["Staffid"] = $rows['id']; ?>
+							<?php $_SESSION["days"] = $rows['days']; ?>
 							<button onclick="window.location.href='Approve.php';">Approval</button>
 							
 							</td>

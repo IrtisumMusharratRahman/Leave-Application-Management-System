@@ -16,13 +16,17 @@ header("Location: login.php");   //send user to login page
 <?php
 
 		 $ID = $_SESSION["Staffid"];
+     $days_of_leave=$_SESSION["days"];
 
 		 require ("./Table/config.php");
 
-		 $sql="SELECT * FROM form WHERE id='$ID'";
+		 $sql="SELECT * FROM NewApplication WHERE id='$ID' AND days='$days_of_leave'"; 
 		 $result = mysqli_query($conn, $sql);
 		 $rows=mysqli_fetch_assoc($result);
 
+
+
+                
 ?>
 
 

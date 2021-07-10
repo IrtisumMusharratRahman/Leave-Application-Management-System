@@ -19,7 +19,7 @@ if ($_SESSION["LEVEL"] == 3) {
 		<?php
 		$ID = $_SESSION["id"];
 		require("./Table/config.php");
-		$sql = "SELECT * FROM form WHERE id='$ID'";
+		$sql = "SELECT * FROM newapplication WHERE id='$ID'";
 		$result = mysqli_query($conn, $sql);
 		$rows = mysqli_fetch_assoc($result);
 		?>
@@ -42,7 +42,7 @@ if ($_SESSION["LEVEL"] == 3) {
 				</tr>
 
 				
-
+					<?php while($rows = mysqli_fetch_assoc($result)){ ?>
 					<tr>
 						<td><?php echo $rows['name']; ?></td>
 						<td><?php echo $rows['id']; ?></td>
@@ -52,7 +52,8 @@ if ($_SESSION["LEVEL"] == 3) {
 						<td><?php echo $rows['reason']; ?></td>
 						<td><?php echo $rows['status']; ?></td>
 					</tr>
-
+					<?php } ?>
+				
 				<table> 
 
 
@@ -63,11 +64,12 @@ if ($_SESSION["LEVEL"] == 3) {
 } elseif ($_SESSION["LEVEL"] == 2) {
 	
 
-	$ID = $_SESSION["Staffid"];         // SESSION e Staffid koi paisos?
+	$ID = $_SESSION["Staffid"];         
+	$days_of_leave=$_SESSION["days"];
 
 	require("./Table/config.php");
 
-	$sql = "SELECT * FROM form WHERE id='$ID'";
+	$sql="SELECT * FROM NewApplication WHERE id='$ID' AND days='$days_of_leave'";          
 	$result = mysqli_query($conn, $sql);
 	$rows = mysqli_fetch_assoc($result);
 
