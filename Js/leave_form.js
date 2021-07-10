@@ -11,19 +11,19 @@ function cal() {
 }
 
 function validateForm() {
-    if (document.forms["leave_form"]["name"].value == "") {
-        document.forms["leave_form"]["name"].style.background = 'red';
+    if (document.getElementById("name").value == "") {
+        document.getElementById("name").style.background = 'red';
         alert("Please Enter Your Full Name!!!");
         return false;
     } else {
-        document.forms["leave_form"]["name"].style.background = 'white';
+        document.getElementById("name").style.background = 'white';
     }
-    if (document.forms["leave_form"]["start_date"].value == "") {
-        document.forms["leave_form"]["start_date"].style.background = 'red';
+    if (document.getElementById("start").value == "") {
+        document.getElementById("start").style.background = 'red';
         alert("Please Enter Leave Starting Date!!!");
         return false;
     } else {
-        document.forms["leave_form"]["start_date"].style.background = 'white';
+        document.getElementById("start").style.background = 'white';
     }
     if (document.forms["leave_form"]["end_date"].value == "") {
         document.forms["leave_form"]["end_date"].style.background = 'red';
