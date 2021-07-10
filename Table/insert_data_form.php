@@ -41,7 +41,7 @@ VALUES ('1006', 'Cindy','2020-02-15','2020-02-19', 5, 'Travel', 'Approved')";
 
 
 if (mysqli_multi_query($conn, $sql)) {
-  echo "<h3>New records created successfully</h3>";
+  // echo "<h3>New records created successfully</h3>";
 } else {
   echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }

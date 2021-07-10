@@ -20,7 +20,7 @@ VALUES ('Cindy', '1006','staff2', 3);";
 
 
 if (mysqli_multi_query($conn, $sql)) {
-  echo "<h3>New records created successfully</h3>";
+  // echo "<h3>New records created successfully</h3>";
 } else {
   echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
