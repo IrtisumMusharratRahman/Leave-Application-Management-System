@@ -9,13 +9,14 @@ if ($_SESSION["Login"] != "YES") //if the user is not logged in or has been logg
 <html>
 
 <head>
-	<title>Viewing Student Data</title>
+	<title>Viewing leave Report</title>
+	<link rel="stylesheet" href="./css/table_report.css" type="text/css"/>
 
 	<head>
 
 	<body>
 
-		<h1>View Student Details </h1>
+		<h1>Leave Applications Report </h1>
 
 		<?php
 		require("./Table/config.php");
@@ -28,13 +29,13 @@ if ($_SESSION["Login"] != "YES") //if the user is not logged in or has been logg
 			<table width="600" border="1" cellspacing="0" cellpadding="3">
 
 				<tr>
-					<td align="center"><strong>Name</strong></td>
-					<td align="center"><strong>ID</strong></td>
-					<td align="center"><strong>Start Date</strong></td>
-					<td align="center"><strong>End Date</strong></td>
-					<td align="center"><strong>Number of Days</strong></td>
-					<td align="center"><strong>Reason</strong></td>
-					<td align="center"><strong>Status</strong></td>
+					<th align="center"><strong>Name</strong></th>
+					<th align="center"><strong>ID</strong></th>
+					<th align="center"><strong>Start Date</strong></th>
+					<th align="center"><strong>End Date</strong></th>
+					<th align="center"><strong>Number of Days</strong></th>
+					<th align="center"><strong>Reason</strong></th>
+					<th align="center"><strong>Status</strong></th>
 				</tr>
 
 				<?php
@@ -64,6 +65,8 @@ if ($_SESSION["Login"] != "YES") //if the user is not logged in or has been logg
 
 
 		?>
+		<br>
+		<br>
 		<button onclick="window.location.href='check_login.php';">Previous Page</button>
 	</body>
 
