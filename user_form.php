@@ -11,30 +11,7 @@ header("Location: login.php");
     <title>Adding New User</title>
 	<link rel="stylesheet" href="./css/user_form.css" type="text/css"/>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <script>
-    function checkvalidation(){
-		var temp;
-        if (document.forms["add_user_form"]["username"].value == "") {
-				alert("Please Enter A User Name!!!");
-				return false;
-		}
-		if (document.forms["add_user_form"]["id"].value == "") {
-				alert("Please Enter A User ID!!!");
-				return false;
-		}
-		if (document.forms["add_user_form"]["password"].value == "") {
-				alert("Please Enter A Password!!!");
-				return false;
-		}
-		temp= document.forms["add_user_form"]["level"].value;
-		if (temp == "" || isNaN(temp) || temp<1 || temp>3) {
-				alert("Please Enter A Valid Integer Between 1 to 3");
-				return false;
-		}
-			
-    }
-</script>
+	<script src="./Js/user_form.js"></script>
 </head>
 
 <body>

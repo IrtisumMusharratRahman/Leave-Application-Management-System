@@ -85,7 +85,6 @@ if ($_SESSION["LEVEL"] == 3) {
 
 $sql = "INSERT INTO form(id, name, Sdate, Edate, days, reason, status) VALUES ('$id','$name','$Sdate','$Edate','$days', '$reason', '$status' )";	
 
-$_SESSION["Table"]="NewApplication";
 
 	if (mysqli_query($conn, $sql)) {
 		echo '<script>
