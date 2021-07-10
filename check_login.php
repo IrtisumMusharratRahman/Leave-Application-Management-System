@@ -3,7 +3,7 @@ session_start();
 require('./Table/config.php');
 
 
-if (!($_SESSION["Login"] == "YES" || $_SESSION["Login"] == "NO")) {         // true kokhon hobe? jokhon XXX asbe, login page e dek
+if (!($_SESSION["Login"] == "YES" || $_SESSION["Login"] == "NO")) {
 
       $myusername = $_POST["username"];
       $mypassword = $_POST["password"];
@@ -12,7 +12,7 @@ if (!($_SESSION["Login"] == "YES" || $_SESSION["Login"] == "NO")) {         // t
 
       $result = mysqli_query($conn, $sql);
 
-      if (mysqli_num_rows($result)==0) {
+      if (mysqli_num_rows($result) == 0) {
             echo '<script>
                         alert("Invalid Username and Password!!!");
                         window.location.href="login.php";
