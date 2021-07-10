@@ -11,7 +11,9 @@ if ($_SESSION["LEVEL"] == 3) {
 	<html>
 
 	<head>
-		<title>Staff Application Status</title>
+		<title>Leave Application Status</title>
+		<link rel="stylesheet" href="./css/table_report.css" type="text/css"/>
+
 	</head>
 
 	<body>
@@ -32,16 +34,15 @@ if ($_SESSION["LEVEL"] == 3) {
 		<table width="600" border="1" cellspacing="0" cellpadding="3">
 
 				<tr>
-					<td align="center"><strong>Name</strong></td>
-					<td align="center"><strong>ID</strong></td>
-					<td align="center"><strong>Start Date</strong></td>
-					<td align="center"><strong>End Date</strong></td>
-					<td align="center"><strong>Number of Days</strong></td>
-					<td align="center"><strong>Reason</strong></td>
-					<td align="center"><strong>Status</strong></td>
+					<th align="center"><strong>Name</strong></th>
+					<th align="center"><strong>ID</strong></th>
+					<th align="center"><strong>Start Date</strong></th>
+					<th align="center"><strong>End Date</strong></th>
+					<th align="center"><strong>Number of Days</strong></th>
+					<th align="center"><strong>Reason</strong></th>
+					<th align="center"><strong>Status</strong></th>
 				</tr>
 
-				
 					<?php while($rows = mysqli_fetch_assoc($result)){ ?>
 					<tr>
 						<td><?php echo $rows['name']; ?></td>
@@ -97,6 +98,7 @@ $sql = "INSERT INTO form(id, name, Sdate, Edate, days, reason, status) VALUES ('
 	mysqli_close($conn);
 }
 	?>
+	<br>
 
 	<button onclick="window.location.href='check_login.php';">Previous Page</button>
 
