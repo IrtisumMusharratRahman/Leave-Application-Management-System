@@ -14,15 +14,15 @@ if ($_SESSION["Login"] != "YES")
 
 	
 
-	<script >
+	<!-- <script >
 		function currentInfo(){
 
-			document.getElementById("username").value= "<?php echo $rows['username'] ?>";
-			document.getElementById("username").value= "<?php echo $rows['password'] ?>";
-			document.getElementById("username").value= "<?php echo $rows['level'] ?>";
+			document.getElementById("username").value= "";
+			document.getElementById("username").value= "";
+			document.getElementById("username").value= "";
 			
 		}
-	</script>
+	</script> -->
 
 
 </head>
@@ -46,7 +46,7 @@ if ($_SESSION["Login"] != "YES")
 		$lvl= $rows['level'];
 	?>
 
-	<button onclick="currentInfo()">Show Previous ID, Password, Level</button>
+	<!-- <button onclick="currentInfo()">Show Previous ID, Password, Level</button> -->
 	
 
 	<form name="form1" method="post" action="update_info.php">
