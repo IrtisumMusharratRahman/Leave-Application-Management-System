@@ -74,7 +74,7 @@ require("./Table/config.php");
 
         <tr>
           <td> Staff Full Name : </td>
-          <td> <input type="text" name="name" size="30" value="" /> </td>
+          <td> <input type="text" id="name" name="name" size="30" value="" /> </td>
         </tr>
 
 
