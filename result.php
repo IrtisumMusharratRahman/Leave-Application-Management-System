@@ -67,11 +67,11 @@ if ($_SESSION["LEVEL"] == 3) {
 
 
 			$ID = $_SESSION["Staffid"];
-			$days_of_leave = $_SESSION["days"];
+			
 
 			
 
-			$sql = "SELECT * FROM NewApplication WHERE id='$ID' AND days='$days_of_leave'";
+			$sql = "SELECT * FROM NewApplication WHERE id='$ID'";
 			$result = mysqli_query($conn, $sql);
 			$rows = mysqli_fetch_assoc($result);
 

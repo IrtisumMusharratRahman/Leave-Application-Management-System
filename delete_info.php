@@ -10,7 +10,7 @@ if ($_SESSION["LEVEL"] == 2) {
 	$days_of_leave = $_SESSION["days"];
 
 
-	$sql = "DELETE FROM NewApplication WHERE id = '$ID' AND days='$days_of_leave'";
+	$sql = "DELETE FROM NewApplication WHERE id = '$ID'";
 
 	if (mysqli_query($conn, $sql)) {
 

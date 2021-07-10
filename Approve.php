@@ -26,7 +26,7 @@ if ($_SESSION["Login"] != "YES") //if the user is not logged in or has been logg
 
     require("./Table/config.php");
 
-    $sql = "SELECT * FROM NewApplication WHERE id='$ID' AND days='$days_of_leave'";
+    $sql = "SELECT * FROM NewApplication WHERE id='$ID'";
     $result = mysqli_query($conn, $sql);
     $rows = mysqli_fetch_assoc($result);
 
