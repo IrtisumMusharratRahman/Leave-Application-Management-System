@@ -1,5 +1,6 @@
 <?php
 session_start();
+require("./Table/config.php");
 
 if ($_SESSION["Login"] != "YES")
 	header("Location: login.php");
@@ -20,8 +21,8 @@ if ($_SESSION["LEVEL"] == 3) {
 
 		<?php
 		$ID = $_SESSION["id"];
-		require("./Table/config.php");
-		$sql = "SELECT * FROM newapplication WHERE id='$ID'";
+		
+		$sql = "SELECT * FROM NewApplication WHERE id='$ID'";
 		$result = mysqli_query($conn, $sql);
 		$rows = mysqli_fetch_assoc($result);
 		?>
@@ -68,7 +69,7 @@ if ($_SESSION["LEVEL"] == 3) {
 			$ID = $_SESSION["Staffid"];
 			$days_of_leave = $_SESSION["days"];
 
-			require("./Table/config.php");
+			
 
 			$sql = "SELECT * FROM NewApplication WHERE id='$ID' AND days='$days_of_leave'";
 			$result = mysqli_query($conn, $sql);
