@@ -8,6 +8,11 @@ if (!($_SESSION["Login"] == "YES" || $_SESSION["Login"] == "NO")) {
       $myusername = $_POST["username"];
       $mypassword = $_POST["password"];
 
+      if(isset($_POST["remember"])){ 
+      setcookie("USER", $myusername, time() + 86400);
+      setcookie("PASS", $mypassword, time() + 86400);
+            }
+
       $sql = "SELECT * FROM user WHERE username='$myusername' and password='$mypassword'";
 
       $result = mysqli_query($conn, $sql);
