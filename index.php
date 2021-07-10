@@ -19,13 +19,11 @@ require('./Table/insert_New_app_form.php');
 
 <body>
 
-	<b class="head">Welcome! Leave Application Management System</b>
+	<b class="head">Welcome To! Leave Application Management System</b>
 	<br />
 	<br />
 
 	<button onclick="window.location.href='login.php';">System Start</button>
-
-
 
 </body>
 
