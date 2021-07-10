@@ -1,46 +1,44 @@
 * {
-    padding: 5px;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 5px;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-image: url("./images/login.jpg");
-    text-align: center;
-    padding-top: 200px;
-
+body {
+  background-image: url("./images/login.jpg");
+  text-align: center;
+  padding-top: 200px;
 }
 
-.head{
-    text-transform: uppercase;
-    color:chartreuse;
-    font-size: large;
-    text-align: center;
-    font-weight: bold;
-    font-size: large;
-    word-spacing: .1rem;
+.head {
+  text-transform: uppercase;
+  color: chartreuse;
+  font-size: large;
+  text-align: center;
+  font-weight: bold;
+  font-size: large;
+  word-spacing: 0.1rem;
 }
 .form {
-    margin-left: 510px;
-    padding-top: 50px; 
-    max-height: 500px;
-    max-width: 500px;
-    border: solid 2px whitesmoke;
-  }
-
-  .btn {
-    display: block;
-    height: 40px;
-    width: 150px;
-    border-radius: 25px;
-    font-size: medium;
-    font-weight: 500px;
-    margin-left: 190px;
+  margin-left: 510px;
+  padding-top: 50px;
+  max-height: 500px;
+  max-width: 500px;
+  border: solid 2px whitesmoke;
 }
 
-.btn:hover{
+.btn {
+  display: block;
+  height: 40px;
+  width: 150px;
+  border-radius: 25px;
+  font-size: medium;
+  font-weight: 500px;
+  margin-left: 190px;
+}
 
-    color:black;
-    background-color:darkorange;
-    transition: .5s;
+.btn:hover {
+  color: black;
+  background-color: darkorange;
+  transition: 0.5s;
 }
