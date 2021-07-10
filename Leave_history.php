@@ -10,6 +10,7 @@ if ($_SESSION["Login"] != "YES") //if the user is not logged in or has been logg
 
 <head>
 	<title>History</title>
+	<link rel="stylesheet" href="./css/table_report.css" type="text/css"/>
 
 </head>
 
@@ -26,7 +27,7 @@ if ($_SESSION["Login"] != "YES") //if the user is not logged in or has been logg
 
 			?>
 
-	    <h3>Your leave details:</h3> 
+	    <h1>Your Leave History</h1> 
 		
 	
 			<!-- Start table -->
@@ -42,6 +43,8 @@ if ($_SESSION["Login"] != "YES") //if the user is not logged in or has been logg
 					<td> <?php echo $_SESSION["id"]   ?> </td>
 				</tr>
 			</table>
+			<br>
+			<br>
 
 
 			<table width="600" border="1" cellspacing="0" cellpadding="3">
@@ -83,10 +86,8 @@ if ($_SESSION["Login"] != "YES") //if the user is not logged in or has been logg
 	?>
 
 	</table>
-
-	
-
-
+	    <br>
+		<br>
 		<button onclick="window.location.href='check_login.php';">Main Page</button>
 	</body>
 </html>
